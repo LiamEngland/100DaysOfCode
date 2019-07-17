@@ -1,0 +1,17 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 50px;
+}
+
+p, pre {
+    color: gray;
+}
