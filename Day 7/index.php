@@ -102,6 +102,7 @@
                     if (isset($_COOKIE['testCookie'])) {
                         echo "Welcome " . $_COOKIE['testCookie'];
                         setcookie('testCookie', '', time()-60, '/', '', 0);
+                        // Echoing then deleting cookie.
                     }
                 ?>
                 <p class='text-muted'>Cookie Deleted.</p>
