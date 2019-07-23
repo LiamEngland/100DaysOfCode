@@ -17,7 +17,7 @@
                 <hr>
             </div>
             <div class='col-sm-12 col-md-6'>
-                <h3>PHP Sessions:</h3>
+                <h3 class='text-center'>PHP Sessions:</h3>
                 <hr>
                 <?php
                     if (isset($_SESSION['counter'])) {
@@ -70,8 +70,7 @@
                         <li>Sent file: <?php echo $_FILES['image']['name']; ?>
                         <li>File size: <?php echo $_FILES['image']['size']; ?>
                         <li>File type: <?php echo $_FILES['image']['type']; ?>
-                    </ul>
-                        
+                    </ul>  
                 </form>
             </div>
         </div>
