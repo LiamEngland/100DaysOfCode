@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: welcome.php");
@@ -40,21 +40,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
             // Set parameters
             $param_username = $username;
-            
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
+            if(mysqli_stmt_execute($stmt)) {
                 // Store result
                 mysqli_stmt_store_result($stmt);
-                
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                if (mysqli_stmt_num_rows($stmt) == 1) {                    
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                    if (mysqli_stmt_fetch($stmt)) {
+                        if (password_verify($password, $hashed_password)) {
                             // Password is correct, so start a new session
                             session_start();
                             
@@ -62,66 +59,57 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
-                            
-                            // Redirect user to welcome page
                             header("location: welcome.php");
-                        } else{
-                            // Display an error message if password is not valid
+                        } else {
                             $passwordError = "The password you entered was not valid.";
                         }
                     }
-                } else{
-                    // Display an error message if username doesn't exist
+                } else {
                     $usernameError = "No account found with that username.";
                 }
-            } else{
+            } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
         }
-        
-        // Close statement
         mysqli_stmt_close($stmt);
     }
-    
-    // Close connection
     mysqli_close($link);
 }
 ?>
  
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel='stylesheet' href='assets/css/style.css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class='login'>
 <div class='container-fluid h-100'>
-    <div class='row justify-content-center h-100'>
-        <div class='col-sm-12 col-md-6 col-lg-4 mt-5'>
-            <h2 class='text-center'>Login</h2>
-            <hr>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <div class="form-group <?php echo (!empty($usernameError)) ? 'has-error' : ''; ?>">
-                    <label>Username</label>
-                    <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                    <span class="help-block"><?php echo $usernameError; ?></span>
-                </div>    
-                <div class="form-group <?php echo (!empty($passwordError)) ? 'has-error' : ''; ?>">
-                    <label>Password</label>
-                    <input type="password" name="password" class="form-control">
-                    <span class="help-block"><?php echo $passwordError; ?></span>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary w-100" value="Login">
-                </div>
-                <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-            </form>
+    <div class='row d-flex align-items-center justify-content-center h-100'>
+        <div class='col-sm-12 col-md-6 col-lg-4'>
+            <div class='card p-3'>
+                <h2 class='text-center'>Login</h2>
+                <hr>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <div class="form-group <?php echo (!empty($usernameError)) ? 'has-error' : ''; ?>">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                        <span class="help-block"><?php echo $usernameError; ?></span>
+                    </div>    
+                    <div class="form-group <?php echo (!empty($passwordError)) ? 'has-error' : ''; ?>">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control">
+                        <span class="help-block"><?php echo $passwordError; ?></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary w-100" value="Login">
+                    </div>
+                    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                </form>
+            </div>
         </div>
     </div>
 </div>

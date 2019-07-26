@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    background-color: black !important;
+}
+
+.login {
+    background-image: url('../img/2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.loginBox {
+    background-color: aliceblue;
+}
