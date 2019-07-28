@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    background-color: rgb(61, 61, 61) !important;
+}
+
+.login {
+    background-image: url('../img/2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.loginBox {
+    background-color: aliceblue;
+}
+
+.card {
+    border: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #a5a5a5 !important;
+    transition-duration: 0.3s !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    transition-duration: 0.3s !important;
+}
