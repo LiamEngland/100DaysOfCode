@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    background-color: rgb(65, 182, 166) !important;
+}
+
+.login {
+    background-image: url('../img/2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.loginBox {
+    background-color: aliceblue;
+}
+
+.card, .card-header, .card-body, .card-footer {
+    border: 0 !important;
+    background-color: #ffffff !important;
+}
+
+.nav-link, .navbar-brand {
+    text-decoration: none !important;
+    color: #000000 !important;
+    transition-duration: 0.3s !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    transition-duration: 0.3s !important;
+}
+
+.card, input {
+    border-radius: 0 !important;
+}
