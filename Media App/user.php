@@ -16,7 +16,7 @@ if ($pre = $connection->prepare($statement)) {
 
 ?>
 
-<div class='container-fluid mt-5'>
+<div class='container-fluid mt-4'>
     <div class='row d-flex align-content-center justify-content-center h-100'>
         <div class='col-sm-12 col-md-8 col-xl-6'>
             <div class='card w-100 shadow'>
@@ -27,10 +27,11 @@ if ($pre = $connection->prepare($statement)) {
                 <div class='card-body'>
                     <div class='row'>
                         <div class='col-sm-12 col-md-8 col-lg-9'>
-                            <label class='text-muted'>Profile Image : </label>
+                            <label class='text-muted edit'>Profile Image : </label>
                         </div>
                         <div class='col-sm-12 col-md-4 col-lg-3'>
                             <img src='assets/img/3.png' class='w-100 shadow'>
+                            <input type="file" style="opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;" />
                         </div>
                     </div>
                     <hr>

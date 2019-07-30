@@ -33,7 +33,7 @@ if (isset($_POST['update'])) {
 
 ?>
 
-<div class='container-fluid mt-5'>
+<div class='container-fluid mt-4'>
     <div class='row d-flex align-content-center justify-content-center h-100'>
         <div class='col-sm-12 col-md-8 col-xl-6'>
             <div class='card w-100 shadow'>
@@ -42,7 +42,7 @@ if (isset($_POST['update'])) {
                     <hr>
                 </div>
                 <div class='card-body'>
-                    <div class='row'>
+                    <div class='row d-flex'>
                         <div class='col-12'>
                             <form  method='post' action="<?php $_PHP_SELF ?>">
                                 <div class="form-group">
@@ -53,7 +53,13 @@ if (isset($_POST['update'])) {
                                     <label for="lastName">Last Name</label>
                                     <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" value="<?= $rows['lastName'] ?>">
                                 </div>
+                                
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-12 d-flex'>
                                 <input name="update" type="submit" id="update" value="Update Form" class='btn btn-success rounded-0'>
+                                <a href='user.php' class='btn btn-secondary rounded-0 ml-auto'>Back</a>
                             </form>
                         </div>
                     </div>

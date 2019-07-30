@@ -1,7 +1,11 @@
 html, body {
     height: 100%;
     font-family: 'Lato', sans-serif !important;
-    background-color: rgb(65, 182, 166) !important;
+    background-color: #000000 !important;
+}
+
+.navigation {
+    background-color: #060029 !important;
 }
 
 .login {
@@ -21,7 +25,7 @@ html, body {
 
 .nav-link, .navbar-brand {
     text-decoration: none !important;
-    color: #000000 !important;
+    color: #ffffff !important;
     transition-duration: 0.3s !important;
 }
 
