@@ -5,11 +5,11 @@ include_once('header.php');
 $ID = $_SESSION['id'];
 
 if (isset($_POST['update'])) {
-    $sql = "UPDATE user SET firstName = ?, lastName = ? WHERE id = ?";
+    $sql = "UPDATE user SET firstName = ?, lastName = ?, phoneNumber = ? WHERE id = ?";
 
     $statement = $connection->prepare($sql);
 
-    $statement->bind_param('ssi', $_POST['firstName'], $_POST['lastName'], $_SESSION['id']);
+    $statement->bind_param('sssi', $_POST['firstName'], $_POST['lastName'], $_POST['phoneNumber'], $_SESSION['id']);
     $statement->execute();
 
     if ($statement->error) {
@@ -53,7 +53,10 @@ if (isset($_POST['update'])) {
                                     <label for="lastName">Last Name</label>
                                     <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" value="<?= $rows['lastName'] ?>">
                                 </div>
-                                
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input name="phoneNumber" type="text" class="form-control" id="lastName" placeholder="Last Name" value="<?= $rows['phoneNumber'] ?>">
+                                </div>
                         </div>
                     </div>
                     <div class='row'>

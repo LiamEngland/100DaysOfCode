@@ -56,7 +56,7 @@ $userPath = $target_dir . $rows['actualFileName'];
                             <label class='text-muted'>Last Name</label><h6 class='d-inline ml-auto'><?= $rows['lastName'] ?></h6>
                         </div>
                         <div class='col-12 d-flex'>
-                            <label class='text-muted'>Phone No</label><h6 class='d-inline ml-auto'><?= $rows['phoneNo'] ?></h6>
+                            <label class='text-muted'>Phone Number</label><h6 class='d-inline ml-auto'><?= $rows['phoneNumber'] ?></h6>
                         </div>
                     </div>
                     <hr>

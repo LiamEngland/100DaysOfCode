@@ -35,7 +35,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="user.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?= $_SESSION['username'] ?>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
