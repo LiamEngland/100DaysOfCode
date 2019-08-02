@@ -16,13 +16,12 @@ if ($pre = $connection->prepare($statement)) {
 
 $target_dir = "uploads/profile-picture/";
 $userPath = $target_dir . $rows['actualFileName'];
-
 ?>
 
 <div class='container-fluid mt-4'>
     <div class='row d-flex align-content-center justify-content-center h-100'>
         <div class='col-sm-12 col-md-8 col-xl-6'>
-            <div class='card w-100 shadow'>
+            <div class='card w-100 shadow mb-4'>
                 <div class='card-header pb-0'>
                     <h1>Account Details</h1>
                     <hr>
@@ -33,12 +32,13 @@ $userPath = $target_dir . $rows['actualFileName'];
                             <label class='text-muted edit'>Profile Image : </label>
                         </div>
                         <div class='col-sm-12 col-md-4 col-lg-3'>
-                            <img src="<?= $userPath ?>" class='w-100 shadow'>
                                 <form action="upload-avi.php" method="post" enctype="multipart/form-data">
-                                    <input type="file" style="opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;" name="fileToUpload" id="fileToUpload">
-                                    
+                                    <img src="<?= $userPath ?>" class='w-100 shadow'>
+                                    <input type="file" name="fileToUpload" id="fileToUpload" class='fileUpload'>
                         </div>
-                            <input type="submit" value="Upload Image" name="submit" class='btn btn-success'>
+                        <div class='col-12 d-flex'>
+                            <input type="submit" value="Upload Image" name="submit" class='btn btn-success mt-2 ml-auto'>
+                        </div>
                         </form>
                     </div>
                     <hr>

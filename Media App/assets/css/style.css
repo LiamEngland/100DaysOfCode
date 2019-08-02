@@ -1,11 +1,27 @@
 html, body {
     height: 100%;
+    margin: 0;
     font-family: 'Lato', sans-serif !important;
-    background-color: #000000 !important;
+    background-color: #1a1a1a !important;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .navigation {
-    background-color: #060029 !important;
+    background-color: #000000 !important;
 }
 
 .login {
@@ -37,4 +53,15 @@ html, body {
 
 .card, input {
     border-radius: 0 !important;
+}
+
+.fileUpload {
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
 }

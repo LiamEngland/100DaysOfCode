@@ -61,7 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 // Attempt to execute the prepared statement
                 if (mysqli_stmt_execute($stmt)) {
-                    // Password updated successfully. Destroy the session, and redirect to login page
                     header("location: user.php");
                     exit();
                 } else {
@@ -84,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class='container-fluid h-100'>
     <div class='row justify-content-center align-items-center h-100'>
         <div class='col-sm-12 col-md-6 col-xl-4'>
-            <div class='card p-2 shadow'>
+            <div class='card p-2 shadow mt-5'>
                 <h2 class='text-center'>Change Password</h2>
                 <hr>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -95,12 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="form-group <?php echo (!empty($newPasswordError)) ? 'has-error' : ''; ?>">
                         <label>New Password</label>
-                        <input type="password" name="newPassword" class="form-control" value="<?php echo $newPassword; ?>">
+                        <input type="password" name="newPassword" class="form-control" value="<?php echo $newPassword; ?>" placeholder='Enter new Password'>
                         <span class="help-block"><?php echo $newPasswordError; ?></span>
                     </div>
                     <div class="form-group <?php echo (!empty($confirmPasswordError)) ? 'has-error' : ''; ?>">
                         <label>Confirm Password</label>
-                        <input type="password" name="confimPassword" class="form-control">
+                        <input type="password" name="confimPassword" class="form-control" placeholder='Confirm new Password'>
                         <span class="help-block"><?php echo $confirmPasswordError; ?></span>
                     </div>
                     <div class="form-group mb-0">
