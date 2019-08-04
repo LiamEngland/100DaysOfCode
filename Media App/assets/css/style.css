@@ -7,12 +7,12 @@ html, body {
 
 .wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -60px;
 }
 
 .footer,
 .push {
-    height: 50px;
+    height: 60px;
 }
 
 .footer {
@@ -66,6 +66,10 @@ html, body {
     height:100%;
 }
 
-p {
+p, td {
     font-family: 'Raleway', sans-serif !important;
+}
+
+audio {
+    margin-top: 2px;
 }

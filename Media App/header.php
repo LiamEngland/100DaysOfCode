@@ -33,10 +33,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a class="nav-link" href='home.php'>HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href='library.php'>LIBRARY <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href='audio.php'>AUDIO <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href='videos.php'>VIDEOS <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href='video.php'>VIDEO <span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <ul class="navbar-nav">
