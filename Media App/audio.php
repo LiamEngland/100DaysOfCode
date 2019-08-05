@@ -14,7 +14,11 @@
             <hr class='hrLight'>
         </div>
         <div class='col-12'>
-            <p class='text-center'>+ Upload File</p>
+            <form action="audio-upload.php" method="POST" enctype="multipart/form-data" class='mb-3'>
+                <input type="file" name="songToUpload" id="songToUpload">
+                <input type="submit" class='float-right'>
+            </form>
+            <hr class='hrLight'>
         </div>
         <div class='col-12'>
             <table class='w-100'>

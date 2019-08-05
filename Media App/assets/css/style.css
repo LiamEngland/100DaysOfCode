@@ -73,3 +73,7 @@ p, td {
 audio {
     margin-top: 2px;
 }
+
+.hrLight {
+    background-color: white !important;
+}
