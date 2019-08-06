@@ -1,5 +1,6 @@
 <?php
 $title = 'Account Management';
+include_once('config.php');
 include_once('header.php');
 
 $ID = $_SESSION['id'];

@@ -11,28 +11,33 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $temp = explode(".", $_FILES["songToUpload"]["name"]);
 $time = round(microtime(true));
 $newfilename = $target_dir . $time . '.' . end($temp);
+$existingName = $_FILES["songToUpload"]["name"];
 
 if (file_exists($newfilename)) {
     echo "Sorry, file already exists.";
     $uploadOk = 0;
 }
 
-if ($_FILES["songToUpload"]["size"] > 500000) {
+if ($_FILES["songToUpload"]["size"] > 1000000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
 
-//var_dump($_FILES['songToUpload']);
-//exit;
+if (!isset($_FILES["songToUpload"]["sizename"]) && $_FILES["songToUpload"]["name"] == '') {
+    echo "File not set.";
+    // add flash for file name not set.
+    $uploadOk = 0;
+}
+
 
 $userFile = $time . '.' . end($temp);
 
 if (move_uploaded_file($_FILES["songToUpload"]["tmp_name"], $newfilename)) {
-    $sql = "UPDATE audioFiles SET actualFileName = ? WHERE id = ?";
+    $sql = "INSERT INTO audioFiles SET actualFileName = ?, originalFileName = ?, user_id = ?";
 
     $statement = $connection->prepare($sql);
 
-    $statement->bind_param('si', $userFile, $_SESSION['id']);
+    $statement->bind_param('ssi', $userFile, $existingName, $_SESSION['id']);
     $statement->execute();
     header('location: audio.php');
     // Add flash.

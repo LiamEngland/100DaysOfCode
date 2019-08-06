@@ -1,10 +1,29 @@
 <?php
-    include_once('config.php');
-    $title = 'Audio Library';
-?>
 
-<?php
-    include_once('header.php');
+include_once('config.php');
+$title = 'Audio Library';
+include_once('header.php');
+
+function getSongs($result) {
+    $rows = array();
+    while ($row = $result->fetch_assoc()) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
+
+$ID = $_SESSION['id'];
+$statement = "SELECT * FROM audiofiles WHERE user_id = ?";
+
+if ($pre = $connection->prepare($statement)) {
+    $id = $ID;
+    $pre->bind_param('i', $id);
+    $pre->execute();
+    $result = $pre->get_result();
+    $rows = getSongs($result);
+}
+
+$target_dir = "uploads/audio/";
 ?>
 
 <div class='container'>
@@ -23,29 +42,21 @@
         <div class='col-12'>
             <table class='w-100'>
                 <tr>
-                    <th>Name</th>
-                    <th>Artist</th>
+                    <th>File Name</th>
                     <th>Song Length</th>
-                    <th>Date Added</th>
+                    <th>Last Updated</th>
                 </tr>
-                <tr>
-                    <td>Used</td>
-                    <td>Mistakes</td>
-                    <td>4:13</td>
-                    <td>04/08/2019</td>
-                </tr>
-                <tr>
-                    <td>Gully</td>
-                    <td>My Nu Leng</td>
-                    <td>4:34</td>
-                    <td>04/08/2019</td>
-                </tr>
-                <tr>
-                    <td>Shapes</td>
-                    <td>Mumbai Style</td>
-                    <td>4:48</td>
-                    <td>04/08/2019</td>
-                </tr>
+                <?php
+                    if (isset($rows)) {
+                        foreach ($rows as $track) {
+                            echo '<tr>';
+                            echo '<td>' . $track['originalFileName'] . '</td>';
+                            echo '<td>' . '</td>';
+                            echo '<td>' . $track['updatedTime'] . '</td>';
+                            echo '</tr>';
+                        }
+                    }
+                ?>
             </table>
         </div>
     </div>
