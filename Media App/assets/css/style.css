@@ -74,3 +74,41 @@ audio {
 .hrLight {
     background-color: white !important;
 }
+
+.songList {
+    background-color: #1a1a1a !important;
+    transition-duration: 0.3s;
+    height: 2.7rem !important;
+}
+
+.songList:hover {
+    background-color: #131313 !important;
+    transition-duration: 0.3s;
+}
+
+.heading {
+    height: 2.5rem;
+    border-bottom: 1px solid white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.customFileUpload {
+    border: 1px solid #ccc;
+    transition-duration: 0.2s;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.customFileUpload:hover {
+    border: 1px solid #ccc;
+    color: #000000;
+    background-color: #ffffff;
+    transition-duration: 0.2s;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}

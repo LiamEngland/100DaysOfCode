@@ -29,30 +29,38 @@ $target_dir = "uploads/audio/";
 <div class='container'>
     <div class='row text-light'>
         <div class='col-12'>
-            <h1 class='text-center m-3'>PLAYLISTS HERE</h1>
-            <hr class='hrLight'>
+            <h1 class='text-center m-3'>AUDIO LIBRARY</h1>
         </div>
+        <script>            
+            function myFunction() {
+                var filename = '';
+                document.getElementById("fileSelected").innerHTML = '1 File Selected';
+            }
+        </script>
         <div class='col-12'>
             <form action="audio-upload.php" method="POST" enctype="multipart/form-data" class='mb-3'>
-                <input type="file" name="songToUpload" id="songToUpload">
-                <input type="submit" class='float-right'>
+                <label class="customFileUpload">
+                    <input type="file" name="songToUpload" id="songToUpload" onchange="myFunction(this.value)">
+                    <i class="fas fa-upload"></i> Custom Upload
+                </label>
+                <span id="fileSelected">No File Selected</span>
+                <input type="submit" class='btn btn-outline-primary float-right'>
             </form>
-            <hr class='hrLight'>
         </div>
         <div class='col-12'>
             <table class='w-100'>
-                <tr>
+                <tr class='heading'>
                     <th>File Name</th>
-                    <th>Song Length</th>
-                    <th>Last Updated</th>
+                    <th class='text-center'>Song Length</th>
+                    <th class='text-right'>Last Updated</th>
                 </tr>
                 <?php
                     if (isset($rows)) {
                         foreach ($rows as $track) {
-                            echo '<tr>';
+                            echo '<tr  class="songList">';
                             echo '<td>' . $track['originalFileName'] . '</td>';
-                            echo '<td>' . '</td>';
-                            echo '<td>' . $track['updatedTime'] . '</td>';
+                            echo '<td class="text-center"> UNKNOWN' . '</td>';
+                            echo '<td class="text-right">' . $track['updatedTime'] . '</td>';
                             echo '</tr>';
                         }
                     }
