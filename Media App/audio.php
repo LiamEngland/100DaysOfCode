@@ -38,12 +38,12 @@ $target_dir = "uploads/audio/";
             }
         </script>
         <div class='col-12'>
-            <form action="audio-upload.php" method="POST" enctype="multipart/form-data" class='mb-3'>
+            <form action="audio-upload.php" method="POST" enctype="multipart/form-data" class='mb-5'>
                 <label class="customFileUpload">
                     <input type="file" name="songToUpload" id="songToUpload" onchange="myFunction(this.value)">
                     <i class="fas fa-upload"></i> Custom Upload
                 </label>
-                <span id="fileSelected">No File Selected</span>
+                <span class='ml-2' id="fileSelected">No File Selected</span>
                 <input type="submit" class='btn btn-outline-primary float-right'>
             </form>
         </div>
@@ -59,8 +59,9 @@ $target_dir = "uploads/audio/";
                         foreach ($rows as $track) {
                             echo '<tr  class="songList">';
                             echo '<td>' . $track['originalFileName'] . '</td>';
-                            echo '<td class="text-center"> UNKNOWN' . '</td>';
+                            echo '<td class="text-center">' . $track['songLength'] . '</td>';
                             echo '<td class="text-right">' . $track['updatedTime'] . '</td>';
+                            echo '<td><button class="float-right btn btn-sm btn-outline-danger rounded-0"><i class="fas fa-times"></i></button></td>';
                             echo '</tr>';
                         }
                     }

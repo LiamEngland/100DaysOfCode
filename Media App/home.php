@@ -5,10 +5,7 @@ include_once('header.php');
 <div class='container-fluid'>
     <div class='row d-flex align-items-center justify-content-center h-100'>
         <div class='col-12'>
-            <audio controls>
-                <source src="uploads/audio/1.mp3" type="audio/mpeg">
-                Your browser isn't supported.
-            </audio>
+
         </div>
     </div>
 </div>
