@@ -8,6 +8,7 @@ $target_dir = "uploads/audio/";
 $target_file = $target_dir . basename($_FILES["songToUpload"]["name"]);
 $uploadOk = 1;
 $audioFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$allowedExtentions = array('wav', 'mpeg', 'mp3');
 
 $temp = explode(".", $_FILES["songToUpload"]["name"]);
 $time = round(microtime(true));
@@ -26,28 +27,30 @@ if ($_FILES["songToUpload"]["size"] > 1000000000) {
 
 if (!isset($_FILES["songToUpload"]["sizename"]) && $_FILES["songToUpload"]["name"] == '') {
     echo "File not set.";
-    // add flash for file name not set.
     $uploadOk = 0;
 }
 
+if (!in_array($audioFileType, $allowedExtentions)) {
+    $uploadOk = 0;
+}
 
 $userFile = $time . '.' . end($temp);
 
-if (move_uploaded_file($_FILES["songToUpload"]["tmp_name"], $newFileName)) {
+if ($uploadOk == 1) {
+    if (move_uploaded_file($_FILES["songToUpload"]["tmp_name"], $newFileName)) {
+        $getID3 = new getID3;
+        $file = $getID3->analyze($newFileName);
+        $playtimeSeconds = $file['playtime_seconds'];
+        $songLength = gmdate("H:i:s", $playtimeSeconds);
+        
+        $sql = "INSERT INTO audioFiles SET actualFileName = ?, originalFileName = ?, user_id = ?, songLength = ?";
 
-    $getID3 = new getID3;
-    $file = $getID3->analyze($newFileName);
-    $playtimeSeconds = $file['playtime_seconds'];
-    $songLength = gmdate("H:i:s", $playtimeSeconds);
-    
-    $sql = "INSERT INTO audioFiles SET actualFileName = ?, originalFileName = ?, user_id = ?, songLength = ?";
+        $statement = $connection->prepare($sql);
 
-    $statement = $connection->prepare($sql);
-
-    $statement->bind_param('ssis', $userFile, $existingName, $_SESSION['id'], $songLength);
-    $statement->execute();
-    header('location: audio.php');
-    // Add flash.
+        $statement->bind_param('ssis', $userFile, $existingName, $_SESSION['id'], $songLength);
+        $statement->execute();
+        header('location: audio.php');
+    }
 } else {
     header('location: audio.php');
 }

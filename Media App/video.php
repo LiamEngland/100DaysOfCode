@@ -1,6 +1,6 @@
 <?php
 include_once('config.php');
-$title = 'Audio Library';
+$title = 'Video Library';
 include_once('header.php');
 
 function getVideos($result) {
@@ -38,13 +38,13 @@ $target_dir = "uploads/video/";
             }
         </script>
         <div class='col-12'>
-            <form action="audio-upload.php" method="POST" enctype="multipart/form-data" class='mb-5'>
+            <form action="video-upload.php" method="POST" enctype="multipart/form-data" class='mb-5'>
                 <label class="customFileUpload">
                     <input type="file" name="videoToUpload" id="videoToUpload" onchange="myFunction(this.value)">
-                    <i class="fas fa-upload"></i> Custom Upload
+                    <i class="far fa-folder-open"></i> Choose Video
                 </label>
                 <span class='ml-2' id="fileSelected">No File Selected</span>
-                <input type="submit" class='btn btn-outline-primary float-right'>
+                <button type="submit" class='btn btn-outline-primary float-right rounded-0'><i class="fas fa-upload"></i> Upload</button>
             </form>
         </div>
         <div class='col-12'>
@@ -57,11 +57,10 @@ $target_dir = "uploads/video/";
                 <?php
                     if (isset($rows)) {
                         foreach ($rows as $track) {
-                            echo '<tr  class="sonList">';
+                            echo '<tr  class="songList">';
                             echo '<td>' . $track['originalFileName'] . '</td>';
                             echo '<td class="text-center">' . $track['videoLength'] . '</td>';
                             echo '<td class="text-right">' . $track['updatedTime'] . '</td>';
-                            echo '<td><button class="float-right btn btn-sm btn-outline-danger rounded-0"><i class="fas fa-times"></i></button></td>';
                             echo '</tr>';
                         }
                     }
