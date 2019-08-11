@@ -114,3 +114,19 @@ audio {
     padding: 6px 12px;
     cursor: pointer;
 }
+
+/* AUDIO PLAYER START */
+
+.playButton {
+    font-size: 2rem;
+}
+
+.backButton {
+    font-size: 2rem;
+}
+
+.forwardButton {
+    font-size: 2rem;
+}
+
+/* AUDIO PLAYER END */
