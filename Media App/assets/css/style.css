@@ -115,6 +115,10 @@ audio {
     cursor: pointer;
 }
 
+.table td, .table th {
+    border-top: none !important;
+}
+
 /* AUDIO PLAYER START */
 
 .playButton {

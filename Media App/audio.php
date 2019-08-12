@@ -48,7 +48,7 @@ $target_dir = "uploads/audio/";
             </form>
         </div>
         <div class='col-12'>
-            <table class='w-100'>
+            <table class='table text-light'>
                 <tr class='heading'>
                     <th>File Name</th>
                     <th class='text-center'>Song Length</th>
@@ -57,7 +57,7 @@ $target_dir = "uploads/audio/";
                 <?php
                     if (isset($rows)) {
                         foreach ($rows as $track) {
-                            echo '<tr  class="songList">';
+                            echo '<tr class="songList">';
                             echo '<td>' . $track['originalFileName'] . '</td>';
                             echo '<td class="text-center">' . $track['songLength'] . '</td>';
                             echo '<td class="text-right">' . $track['updatedTime'] . '</td>';
