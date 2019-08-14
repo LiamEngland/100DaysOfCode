@@ -10,12 +10,12 @@ html, body {
 .wrapper {
     min-height: 100%;
     width: 100%;
-    margin-bottom: -60px;
+    margin-bottom: -80px;
 }
 
 .footer,
 .push {
-    height: 60px;
+    height: 80px;
 }
 
 .footer {
@@ -123,6 +123,11 @@ audio {
 
 .playButton {
     font-size: 2rem;
+}
+
+.pauseButton {
+    font-size: 2rem;
+    display: none;
 }
 
 .backButton {

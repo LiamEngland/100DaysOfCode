@@ -1,20 +1,26 @@
 <div class="push"></div>
 </div>
 
-<audio id='playFooter'>
-    <source src='uploads/audio/1565292554.mp3' type='audio.mp3'>
+<audio id='playFooter' src='uploads/audio/1.mp3'>
+
 </audio>
 
 <footer class="footer text-center">
     <div class='container-fluid h-100'>
         <div class='row align-items-center h-100'>
-            <div class='col-sm-12 col-md-6'>
-                <span class='backButton'><i class="fas fa-backward"></i></span>
-                <span class='playButton' onClick="togglePlay()"><i class="far fa-play-circle"></i></span>
-                <span class='forwardButton'><i class="fas fa-forward"></i></span>
+            <div class='col-12'>
+                <span id="seek-obj-container">
+                    <progress class='w-100' id="seek-obj" value="0" max="1"></progress>
+                </span>
             </div>
             <div class='col-sm-12 col-md-6'>
-                <span class='float-left'>0:00 / 1:00</span>
+                <span class='backButton' onClick="prevSong()"><i class="fas fa-backward"></i></span>
+                <span class='playButton' onClick="toggleMusic()"><i class="far fa-play-circle"></i></span>
+                <span class='pauseButton' onClick="toggleMusic()"><i class="far fa-pause-circle"></i></span>
+                <span class='forwardButton' onClick="nextSong()"><i class="fas fa-forward"></i></span>
+            </div>
+            <div class='col-sm-12 col-md-6'>
+                <span class='timing float-left'></span>
                 <span>Song Name Here</span>
             </div>
         </div>
