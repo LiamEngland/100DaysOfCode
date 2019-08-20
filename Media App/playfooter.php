@@ -1,41 +1,49 @@
 <div class="push"></div>
 </div>
+<script src="assets/js/jquery-1.10.2.min.js"></script>
 
-<audio id='playFooter' src='uploads/audio/1.mp3'></audio>
+<?php
+    $songList = array();
+    if (isset($rows)) {
+        foreach ($rows as $song) {
+            array_push($songList, 'uploads/audio/' . $song['actualFileName']);
+        }
+    }
+
+    $jsSongs = json_encode(array_values($songList));
+?>
 
 <footer class="footer text-center">
     <div class='container-fluid h-100'>
         <div class='row align-items-center h-100'>
             <div class='col-12'>
-                <span id="seek-obj-container">
-                    <progress class='w-100' id="seek-obj" value="0" max="1"></progress>
-                </span>
+                <div id="seek-bar">
+                    <div id="fill"></div>
+                    <div id="handle"></div>
+                </div>
             </div>
             <div class='col-sm-12 col-md-6'>
-                <span class='backButton' onClick="prevSong()"><i class="fas fa-backward"></i></span>
-                <span class='playButton' onClick="toggleMusic()"><i class="far fa-play-circle"></i></span>
-                <span class='pauseButton' onClick="toggleMusic()"><i class="far fa-pause-circle"></i></span>
-                <span class='forwardButton' onClick="nextSong()"><i class="fas fa-forward"></i></span>
+                <button id="pre" onclick="pre()"><img src="assets/img/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="assets/img/Pause.png" height="90%" width="90%"/></button>
+                <button id="next" onclick="next()"><img src="assets/img/Next.png" height="90%" width="90%"/></button>
             </div>
             <div class='col-sm-12 col-md-6'>
-                <span class='timing float-left'></span>
-                <span>Song Name Here</span>
+                <span id='songTitle'></span>
             </div>
         </div>
     </div>
 </footer>
 <script type='text/javascript'>
-    var songs = [];
-    var songTitle = document.getElementById("songTitle");
-    var fillBar = document.getElementById("fill");
 
+    var songs = <?= $jsSongs ?>;
+    console.log(songs);
+    
     var song = new Audio();
     var currentSong = 0;    // it point to the current song
-
-    window.onload = playSong;   // it will call the function playSong when window is load
-
-    function playSong(){
-        
+    
+    window.onload = playSong;  // it will call the function playSong when window is load
+    
+    function playSong() {
         song.src = songs[currentSong];  //set the source of 0th song 
         
         songTitle.textContent = songs[currentSong]; // set the title of song
@@ -43,25 +51,15 @@
         song.play();    // play the song
     }
 
-    function playOrPauseSong(){
-        
-        if(song.paused){
-            song.play();
-            $("#play img").attr("src","Pause.png");
-        }
-        else{
-            song.pause();
-            $("#play img").attr("src","Play.png");
-        }
-    }
 
+    
     song.addEventListener('timeupdate',function(){ 
         
         var position = song.currentTime / song.duration;
         
         fillBar.style.width = position * 100 +'%';
     });
-
+    
 
     function next(){
         
@@ -70,9 +68,7 @@
             currentSong = 0;
         }
         playSong();
-        $("#play img").attr("src","Pause.png");
-        $("#image img").attr("src",poster[currentSong]);
-        $("#bg img").attr("src",poster[currentSong]);
+        $("#play img").attr("src","assets/img/Pause.png");
     }
 
     function pre(){
@@ -82,9 +78,7 @@
             currentSong = 2;
         }
         playSong();
-        $("#play img").attr("src","Pause.png");
-        $("#image img").attr("src",poster[currentSong]);
-        $("#bg img").attr("src",poster[currentSong]);
+        $("#play img").attr("src","assets/img/Pause.png");
     }
 </script>
 <script src='assets/js/audioFile.js'></script>

@@ -121,21 +121,53 @@ audio {
 
 /* AUDIO PLAYER START */
 
-.playButton {
-    font-size: 2rem;
+.seek {
+    width: 100px;
+    height: 5px;
+    background-color:gray;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 25px;
+    cursor: pointer;
 }
 
-.pauseButton {
-    font-size: 2rem;
-    display: none;
+#seek-bar{
+    width: 100%;
+    height:7px;
+    background-color:white;
+    display: flex;
+    cursor: pointer;
+}
+#fill{
+    height: 5px;
+    background-color:royalblue;
+    border-radius: 20px;
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color:royalblue;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
 }
 
-.backButton {
-    font-size: 2rem;
+#play, #next, #pre{
+    width: 50px;
+    height: 50px;
+    border: 1px royalblue solid;
+    background-color:transparent;
+    outline: none;
+    cursor: pointer;
 }
 
-.forwardButton {
-    font-size: 2rem;
+#play:hover, #next:hover, #pre:hover {
+    width: 50px;
+    height: 50px;
+    border: 1px royalblue solid;
+    background-color: royalblue;
+    outline: none;
+    cursor: pointer;
 }
 
 /* AUDIO PLAYER END */
