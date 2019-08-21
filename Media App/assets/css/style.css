@@ -155,7 +155,7 @@ audio {
 #play, #next, #pre{
     width: 50px;
     height: 50px;
-    border: 1px royalblue solid;
+    border: 1px rgb(47, 51, 63) solid;
     background-color:transparent;
     outline: none;
     cursor: pointer;
@@ -164,8 +164,8 @@ audio {
 #play:hover, #next:hover, #pre:hover {
     width: 50px;
     height: 50px;
-    border: 1px royalblue solid;
-    background-color: royalblue;
+    border: 1px rgb(47, 51, 63) solid;
+    background-color: rgb(47, 51, 63);
     outline: none;
     cursor: pointer;
 }

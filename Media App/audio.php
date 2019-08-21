@@ -46,7 +46,6 @@ $target_dir = "uploads/audio/";
                 <span class='ml-2' id="fileSelected">No File Selected</span>
                 <button type="submit" class='btn btn-outline-primary float-right rounded-0'><i class="fas fa-upload"></i> Upload</button>
             </form>
-            <button class='btn btn-outline-info rounded-0'>Start Playing</button>
         </div>
         <div class='col-12'>
             <table class='table text-light'>

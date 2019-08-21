@@ -23,9 +23,9 @@
                 </div>
             </div>
             <div class='col-sm-12 col-md-6'>
-                <button id="pre" onclick="pre()"><img src="assets/img/Pre.png" height="90%" width="90%"/></button>
-                <button id="play" onclick="playOrPauseSong()"><img src="assets/img/Pause.png" height="90%" width="90%"/></button>
-                <button id="next" onclick="next()"><img src="assets/img/Next.png" height="90%" width="90%"/></button>
+                <button id="pre" onclick="prevSong()"><img src="assets/img/Pre.png" height="90%" width="90%"/></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="assets/img/Play.png" height="90%" width="90%"/></button>
+                <button id="next" onclick="nextSong()"><img src="assets/img/Next.png" height="90%" width="90%"/></button>
             </div>
             <div class='col-sm-12 col-md-6'>
                 <span id='songTitle'></span>
@@ -35,47 +35,54 @@
 </footer>
 <script type='text/javascript'>
 
-    var songs = <?= $jsSongs ?>;
-    console.log(songs);
-    
+    var songs = <?= $jsSongs ?>; // Initialisation of variables.
     var song = new Audio();
-    var currentSong = 0;    // it point to the current song
+    var currentSong = 0; // In future set this to array value of row click.
+    var listLength = songs.length - 1;
+    var fillBar = document.getElementById("fill");
     
-    window.onload = playSong;  // it will call the function playSong when window is load
+    window.onload = pageLoad; // Calls player initialisation function.
     
-    function playSong() {
-        song.src = songs[currentSong];  //set the source of 0th song 
-        
-        songTitle.textContent = songs[currentSong]; // set the title of song
-        
-        song.play();    // play the song
+    function pageLoad() { // Initialises the player when the page loads
+        song.src = songs[currentSong];
+        songTitle.textContent = songs[currentSong];
     }
 
+    function playSong() {
+        song.src = songs[currentSong];  //set the source of 0th song 
+        songTitle.textContent = songs[currentSong]; // set the title of song
+        song.play();    // Plays loaded song.
+    }
 
-    
-    song.addEventListener('timeupdate',function(){ 
-        
+    function playOrPauseSong() {
+        if (song.paused) {
+            song.play();
+            $("#play img").attr("src","assets/img/Pause.png");
+        } else {
+            song.pause();
+            $("#play img").attr("src","assets/img/Play.png");
+        }
+    }
+
+    song.addEventListener('timeupdate',function() { 
         var position = song.currentTime / song.duration;
-        
         fillBar.style.width = position * 100 +'%';
     });
     
 
-    function next(){
-        
+    function nextSong() {
         currentSong++;
-        if(currentSong > 2){
+        if (currentSong > listLength) { // Goes to start of array on going over array length.
             currentSong = 0;
         }
         playSong();
         $("#play img").attr("src","assets/img/Pause.png");
     }
 
-    function pre(){
-        
+    function prevSong() {
         currentSong--;
-        if(currentSong < 0){
-            currentSong = 2;
+        if (currentSong < 0) { // Goes to end of array on going lower than index.
+            currentSong = listLength; 
         }
         playSong();
         $("#play img").attr("src","assets/img/Pause.png");
