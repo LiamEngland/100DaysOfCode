@@ -39,6 +39,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <li class="nav-item">
                 <a class="nav-link" href='video.php'>VIDEO <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href='files'.php'>FILES <span class="sr-only">(current)</span></a>
+            </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">

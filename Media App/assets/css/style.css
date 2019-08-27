@@ -126,14 +126,13 @@ audio {
     height: 5px;
     background-color:gray;
     display: flex;
-    border-radius: 50px;
     margin-left: 25px;
     cursor: pointer;
 }
 
 #seek-bar{
     width: 100%;
-    height:7px;
+    height:5px;
     background-color:white;
     display: flex;
     cursor: pointer;
@@ -141,13 +140,11 @@ audio {
 #fill{
     height: 5px;
     background-color:royalblue;
-    border-radius: 20px;
 }
 #handle{
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     background-color:royalblue;
-    border-radius: 50%;
     margin-left: -5px;
     transform: scale(2);
 }

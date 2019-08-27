@@ -26,6 +26,20 @@ if ($pre = $connection->prepare($statement)) {
 $target_dir = "uploads/audio/";
 ?>
 
+<div class="modal fade" id="deleteConfirm" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-0">
+            <div class="modal-body">
+                <h5 class="modal-title text-center" id="deleteConfirmLabel">Delete Song?</h5>
+            </div>
+            <div class="modal-footer border-top-0">
+                <button type="button" class="btn btn-secondary rounded-0 mr-auto" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger rounded-0">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class='container'>
     <div class='row text-light'>
         <div class='col-12'>
@@ -48,24 +62,29 @@ $target_dir = "uploads/audio/";
             </form>
         </div>
         <div class='col-12'>
-            <table class='table text-light'>
-                <tr class='heading'>
-                    <th>File Name</th>
-                    <th class='text-center'>Song Length</th>
-                    <th class='text-right'>Last Updated</th>
-                </tr>
-                <?php
-                    if (isset($rows)) {
-                        foreach ($rows as $track) {
-                            echo '<tr class="songList">';
-                            echo '<td>' . $track['originalFileName'] . '</td>';
-                            echo '<td class="text-center">' . $track['songLength'] . '</td>';
-                            echo '<td class="text-right">' . $track['updatedTime'] . '</td>';
-                            echo '</tr>';
+            <div class='table-responsive'>
+                <table class='table text-light'>
+                    <tr class='heading'>
+                        <th>File Name</th>
+                        <th class='text-center'>Song Length</th>
+                        <th class='text-center'>Last Updated</th>
+                        <th class='text-center'>Options</th>
+
+                    </tr>
+                    <?php
+                        if (isset($rows)) {
+                            foreach ($rows as $track) {
+                                echo '<tr class="songList align-middle">';
+                                echo '<td>' . $track['originalFileName'] . '</td>';
+                                echo '<td class="text-center">' . $track['songLength'] . '</td>';
+                                echo '<td class="text-center">' . $track['updatedTime'] . '</td>';
+                                echo '<td class="text-center p-1"><div class="btn-group p-0" role="group"><button class="btn btn-danger rounded-0" data-toggle="modal" data-target="#deleteConfirm" data-id="' . $track['id'] . '"><i class="fas fa-times fa-fw"></i></button><button class="btn btn-primary rounded-0"><i class="fas fa-pencil-alt fa-fw"></i></button></div></td>';
+                                echo '</tr>';
+                            }
                         }
-                    }
-                ?>
-            </table>
+                    ?>
+                </table>
+            </div>
         </div>
     </div>
 </div>

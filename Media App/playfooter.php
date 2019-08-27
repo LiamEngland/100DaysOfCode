@@ -6,7 +6,9 @@
     $songList = array();
     if (isset($rows)) {
         foreach ($rows as $song) {
-            array_push($songList, 'uploads/audio/' . $song['actualFileName']);
+            $songList[$song['id']]['id'] = $song['id'];
+            $songList[$song['id']]['path'] = 'uploads/audio/' . $song['actualFileName'];
+            $songList[$song['id']]['fileName'] = $song['originalFileName'];
         }
     }
 
@@ -37,20 +39,21 @@
 
     var songs = <?= $jsSongs ?>; // Initialisation of variables.
     var song = new Audio();
-    var currentSong = 0; // In future set this to array value of row click.
+    console.log(songs[0]['id']);
+    var currentSong = 0;
     var listLength = songs.length - 1;
     var fillBar = document.getElementById("fill");
     
     window.onload = pageLoad; // Calls player initialisation function.
     
     function pageLoad() { // Initialises the player when the page loads
-        song.src = songs[currentSong];
-        songTitle.textContent = songs[currentSong];
+        song.src = songs[currentSong]['path'];
+        songTitle.textContent = songs[currentSong]['fileName'];
     }
 
     function playSong() {
-        song.src = songs[currentSong];  //set the source of 0th song 
-        songTitle.textContent = songs[currentSong]; // set the title of song
+        song.src = songs[currentSong]['path'];  //set the source of 0th song 
+        songTitle.textContent = songs[currentSong]['fileName']; // set the title of song
         song.play();    // Plays loaded song.
     }
 
