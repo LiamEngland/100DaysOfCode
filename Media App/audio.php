@@ -34,7 +34,7 @@ $target_dir = "uploads/audio/";
             </div>
             <div class="modal-footer border-top-0">
                 <button type="button" class="btn btn-secondary rounded-0 mr-auto" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger rounded-0">Delete</button>
+                <button type="button" class="btn btn-danger rounded-0" id='confirmDelete'>Delete</button>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@ $target_dir = "uploads/audio/";
                                 echo '<td>' . $track['originalFileName'] . '</td>';
                                 echo '<td class="text-center">' . $track['songLength'] . '</td>';
                                 echo '<td class="text-center">' . $track['updatedTime'] . '</td>';
-                                echo '<td class="text-center p-1"><div class="btn-group p-0" role="group"><button class="btn btn-danger rounded-0" data-toggle="modal" data-target="#deleteConfirm" data-id="' . $track['id'] . '"><i class="fas fa-times fa-fw"></i></button><button class="btn btn-primary rounded-0"><i class="fas fa-pencil-alt fa-fw"></i></button></div></td>';
+                                echo '<td class="text-center p-1"><div class="btn-group p-0" role="group"><button class="btn btn-danger rounded-0 rowDelete" data-toggle="modal" data-target="#deleteConfirm" data-id="' . $track['id'] . '"><i class="fas fa-times fa-fw"></i></button><button class="btn btn-primary rounded-0"><i class="fas fa-pencil-alt fa-fw"></i></button></div></td>';
                                 echo '</tr>';
                             }
                         }
@@ -89,6 +89,29 @@ $target_dir = "uploads/audio/";
     </div>
 </div>
 
+<script>
+    $(document).ready(function() { 
+        $('button').click(function(e) {
+            var id = $(e.currentTarget).closest('.btn-group').find('.rowDelete').data('id');
+            var row = $(this).attr('parentElement');
+            $('#confirmDelete').data('id', id);
+        });
+
+        $('#confirmDelete').click(function() {
+            var confirmId = $(this).data('id');
+            
+            $.ajax({ 
+                url:"testurl"+confirmId,
+                cache:false,
+                success:function(result){
+                    row.find('td').fadeOut(1000,function(){
+                        row.remove();
+                    });
+                }
+            });
+        });
+    });
+</script>
 <?php
     include_once('playfooter.php');
 ?>
