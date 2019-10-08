@@ -1,0 +1,15 @@
+html body {
+    background-color: #7c7c7d;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+img {
+    /*width: 30%;*/
+}
+
+.floatingImage {
+    float: right;
+}
