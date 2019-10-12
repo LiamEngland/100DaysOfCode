@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+#heading {
+    background-color: gold;
+    color: #020212;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.cities {
+    background-color: #020212;
+    color: gold;
+    padding: 15px;
+}
