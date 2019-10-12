@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-GB'>
 <head>
-    <title></title>
+    <title>ID Attribute</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 <body>
@@ -12,5 +12,12 @@
     <p>Paris is the capital city of France.</p>
     <h3 class='cities'>Stockholm</h3>
     <p>Stockholm is the capital city of Sweden.</p>
+    <a href='index.html#heading' onclick='displayResult()'>Return to Top</a>
 </body>
+<script>
+function displayResult() {
+    document.getElementById('heading').innerHTML = 'HTML ID Attributes';
+}
+
+</script>
 </html>
