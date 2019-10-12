@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>The class attribute</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+<div class='cities'>
+    <h3>London</h3>
+    <hr>
+    <p>London is the capital of England.</p>
+</div>
+<div class='cities'>
+    <h3>Paris</h3>
+    <hr>
+    <p>Paris is the capital of France.</p>
+</div>
+<div class='cities2'>
+    <h3>Jakarta</h3>
+    <hr>
+    <p>Jakarta is the capital of Indonesia.</p>
+</div>
+<div class='cities'>
+    <h3>This title is <span class='large'>Important</span></h3>
+    <hr>
+    <p>This is more <span class='large'>important</span> text.</p>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementsByClassName('cities2');
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

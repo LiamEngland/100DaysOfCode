@@ -24,3 +24,19 @@ body {
 .text-center {
     text-align: center;
 }
+
+.cities {
+    background-color: black;
+    color:white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cities h3 {
+    font-size: 150%;
+}
+
+.large {
+    font-size: 125%;
+    color:red;
+}
