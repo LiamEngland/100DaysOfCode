@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML JavaScript</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    <div class='wrapper'>
+        <p id='test'>Testing</p>
+        <button type='button' onclick='changeText()'>Change Text</button>
+        <p>Absolute File Paths</p>
+        <img src='https://www.w3schools.com/images/picture.jpg' alt='mountain'>
+        <p>Relative File Paths</p>
+        <img src='images/1.png'>
+        <!-- /images/1.png for root of directory -->
+        <!-- ../images/1.png 1 level up from current directory-->
+    </div>
+<script>
+function changeText() {
+    document.getElementById('test').innerHTML = 'This is JavaScript';
+    document.getElementById('test').style.color = 'orange';
+    document.getElementById('test').style.backgroundColor = 'black';
+}
+</script>
+<noscript>Browser not supported.</noscript>
+</body>
+</html>
