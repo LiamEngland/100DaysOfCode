@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Container for metadata -->
+    <!-- Meta tags include: title, style, meta, link, script and base -->
+
+    <!-- Specifies document's title -->
+    <title>This is a title</title>
+
+    <!-- Specifies styling to be applied to page, inline not recommended -->
+    <style>
+        body {background-color: orange;}
+    </style>
+
+    <!-- Used to reference external stylesheets, most recommended -->
+    <link rel='stylesheet' type='text/css' href='style.css'>
+
+    <!-- Used to specify which character set is used, page description, keywords, author and other metadata -->
+    <!-- Character set definition -->
+    <meta charset='UTF-8'>
+
+    <!-- Page description definition-->
+    <meta name='description' content='Home page'>
+
+    <!-- Search engine keyword definition -->
+    <meta name='keywords' content='test, testing, tester'>
+
+    <!-- Page author definition -->
+    <meta name='author' content='Liam'>
+
+    <!-- Document refresh, I'm assuming for small pages to increase ad revenue? -->
+    <meta http-equiv='refresh' content='30'>
+
+    <!-- Viewport setting - essential for responsive pages -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <!-- As it looks, a script tag to define JavaScript code -->
+    <script>
+        function testFunction() {
+            document.getElementById('test').innerHTML = 'This is a test';
+        }
+    </script>
+
+    <!-- Specifies the base URL and base target for all relative URLs on the page -->
+    <base href='https://www.liamengland.net' target='_blank' rel='no-opener'>
+</head>
+<body>
+    <h1 id='test'></h1>
+</body>
+</html>
