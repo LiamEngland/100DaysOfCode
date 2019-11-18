@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Elements</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset='UTF-8'>
+</head>
+<body>
+<div class='main'>
+    <h1>HTML Form Elements</h1>
+    <hr>
+    <form>
+        <input name='firstname' type='text'> <!-- Input element can be displayed in 7 ways, depending on the type. -->
+        <select name='selectTest'> <!-- Select element defines a Drop-down List. -->
+            <option value='test1' selected>Test 1</option> <!-- Options are the selectable fields in the select, selected will pre-select an option. -->
+            <option value='test2'>Test 2</option>
+            <option value='test3'>Test 3</option>
+        </select>
+    
+        <!-- Size shows a select amount of options depending on the size attribute. -->
+        <select name='selectTest2' size='3' multiple> <!-- Select element defines a Drop-down List. Multiple allows for multiple selections. -->
+            <option value='test01' selected>Test 1</option> <!-- Options are the selectable fields in the select, selected will pre-select an option. -->
+            <option value='test02'>Test 2</option>
+            <option value='test03'>Test 3</option>
+        </select>
+        <textarea name='message' rows='5' cols='15'>Test
+        </textarea>
+        <button type='button' onclick="alert('Hello World!')">Testing</button>
+    </form>
+</div>
+<div class='half'>
+    <p>Datalist elements specify a list of pre-defined options for an input element.</p>
+    <form action="test.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</div>
+<div class='half'> <!-- Form action won't process, but shows output on processed data. -->
+    <form action="test.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0<input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>

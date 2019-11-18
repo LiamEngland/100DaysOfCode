@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset='UTF-8'>
+</head>
+<body>
+<div class='main'>
+    <h1 class="text-center">HTML Forms</h1>
+    <hr>
+    <div class='half'>
+        <!-- Form element for the collection of user input. -->
+        <form action='submit.php' target='_blank' rel='noopener' method='post'><!-- Setting the action for the form to submit to, will be handled by a PHP script. Target is to specify whether to open in a new tab. Method is the type of submit, the most common methods being GET and POST. -->
+            <!-- Inputs for defining an input of a certain type, defined by the type attribute. -->
+            <label for='textInput'>Text Input</label> <!-- Name attribute in addition to id can identify an input -->
+            <input type='text' name='textInput'><br>
+            <label for='radio1'>Test</label>
+            <input type='radio' name='radioInput' value='test' id='radio1'>
+            <label for='radio2'>Test 2</label>
+            <input type='radio' name='radioInput' value='test2' id='radio2'><br>
+            <input type='submit' value='submit'>
+        </form>
+    </div>
+    <div class='half'>
+        <p>POST should be used with a form when:</p>
+        <ul>
+            <li>Data submission is private and does not display data in the address.</li>
+            <li>There is the potential for having large submissions, as the only limit to POST requests are set in the server's configuration.</li>
+        </ul>
+        <form action='test.php' method='post'>
+            <label for='tests'>Test input</label>
+            <input type='text' name='test'>
+        </form>
+
+        <p>GET should be used with a form when:</p>
+        <ul>
+            <li>Information that isn't sensitive and can be visible in the address.</li>
+            <li>Length of data will be less than 2048 characters.</li>
+            <li>Can be useful for user to bookmark page.</li>
+        </ul>
+        <form action='test.php?id=1' method='get'>
+                <label for='tests'>Test input</label>
+                <input type='text' name='test'>
+        </form>
+    </div>
+</div>
+<div class='main'>
+    <h3>Fieldset</h3>
+    <form>
+        <fieldset>
+            <legend>Testing Fieldset</legend>
+            <label for='textInput'>Text Input</label>
+            <input type='text' name='textInput'><br>
+            <label for='textInput'>Another Text Input</label>
+            <input type='text' name='textInput'><br>
+            <label for='textInput'>Number Input</label>
+            <input type='number' name='textInput'><br>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
