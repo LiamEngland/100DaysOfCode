@@ -1,0 +1,30 @@
+myHero {
+    display: block;
+    background-color: #555555;
+    padding: 50px;
+    font-size: 30px;
+}
+
+body {
+    background-color: #999999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+hr {
+    border: 1px black solid;
+}
+
+tr, td, th {
+    border: 1px solid black;
+    margin: 0;
+}
+
+article {
+    background-color: #777777;
+    padding: 10px;
+}
+
+aside {
+    background-color: #777777;
+    display: block;
+}

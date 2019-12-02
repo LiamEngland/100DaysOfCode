@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Elements</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>   
+<body>
+    <h1>New Semantic/Structural Elements</h1>
+    <hr>
+    <p>Article:</p>
+    <article>
+        <h1>Testing</h1>
+        <p>This is testing the article element.</p>
+    </article>
+    <p>Aside:</p>
+    <aside>This is some aside content.</aside>
+    <p>Dbi:</p>
+    <p><bdi>Test</bdi></p>
+    <details>
+        <p>This is the details element.</p>
+    </details>
+    <p>Dialog:</p>
+    <dialog open>This is a dialog.</dialog>
+    <p>
+        <img src="1.svg">
+        <figcaption>Fig : test</figcaption>
+    </p>
+    <p>Figure:</p>
+    <figure>Self contained content figure.</figure>
+    <p>Footer:</p>
+    <footer>This is a footer element.</footer>
+    <p>Header:</p>
+    <header>This is a header element.</header>
+    <p>Main:</p>
+    <main>This is a main element. Where page content is contained.</main>
+    <p>Mark:</p>
+    <mark>This is a mark element.</mark>
+    <p>Meter:</p>
+    <meter></meter>
+    <p>Nav:</p>
+    <nav></nav>
+    <p>Progress:</p>
+    <progress></progress>
+    <p>Rp: </p>
+    <p>Rt:</p>
+    <p>Ruby:</p>
+    <ruby>
+        漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+    </ruby>
+    <p>Section:</p>
+    <section></section>
+    <p>Summary:</p>
+    <summary></summary>
+    <p>Time: Defines a date/time.</p>
+    <time>12:34</time>
+    <p>Wbr: Defines a possible line break.</p>
+    <h2>New Form Elements</h2>
+    <hr>
+    <form id='test' name='testing'>
+        <input list='browsers'>
+        <datalist id='browsers'>
+            <option value='IE'>
+            <option value='Chrome'>
+            <option value='Opera'>
+        </datalist>
+        <datalist></datalist>
+        <output></output>
+    </form>
+    <h2>New Input Types</h2>
+    <p>color</p>
+    <p>date</p>
+    <p>datetime</p>
+    <p>datetime-local</p>
+    <p>email</p>
+    <p>month</p>
+    <p>number</p>
+    <p>range</p>
+    <p>search</p>
+    <p>tel</p>
+    <p>time</p>
+    <p>url</p>
+    <p>week</p>
+    <p>autocomplete</p>
+    <p>autofocus</p>
+    <p>form</p>
+    <p>formaction</p>
+    <p>formenctype</p>
+    <p>formmethod</p>
+    <p>formnovalidate</p>
+    <p>formtarget</p>
+    <p>height and width</p>
+    <p>list</p>
+    <p>min and max</p>
+    <p>multiple</p>
+    <p>pattern (regexp)</p>
+    <p>placeholder</p>
+    <p>required</p>
+    <p>step</p>
+    <h2>HTML5 Graphics</h2>
+    <hr>
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 80);
+    </script>
+    <svg width='100' height='100'><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>
+    <h2>New Media Elements</h2>
+    <hr>
+    <p>Video & Track:</p>
+    <video width="500" controls>
+        <source src="48k salem.mp4">
+    </video>
+    <p>Audio & Source:</p>
+    <audio controls>
+        <source src="A.M.C & Turno - Boundaries (ft. Dreps & Phantom).mp3">
+    </audio>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>autoplay</td>
+            <td>autoplay</td>
+            <td>Specifies that the audio will start playing as soon as it is ready</td>
+        </tr>
+        <tr>
+            <td>controls</td>
+            <td>controls</td>
+            <td>Specifies that audio controls should be displayed (such as a play/pause button etc)</td>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td>loop</td>
+            <td>Specifies that the audio will start over again, every time it is finished</td>
+        </tr>
+        <tr>
+            <td>muted</td>
+            <td>muted</td>
+            <td>Specifies that the audio output should be muted</td>
+        </tr>
+        <tr>
+            <td>preload</td>
+            <td>preload</td>
+            <td>Specifies if and how the author thinks the audio should be loaded when the page loads</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>src</td>
+            <td>Specifies the URL of the audio file</td>
+        </tr>
+    </table>
+</body> 
+</html>
