@@ -1,0 +1,9 @@
+body {
+    background-color: #777777;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+
+hr {
+    border: 1px solid black;
+}
