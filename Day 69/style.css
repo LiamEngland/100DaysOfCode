@@ -1,0 +1,12 @@
+body {
+    background-color: #777777;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    border: 1px black solid;
+}
