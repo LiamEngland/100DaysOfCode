@@ -1,0 +1,16 @@
+body {
+    background-color: #777777;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    border: 1px black solid;
+}
+
+.text-center {
+    text-align: center;
+}
+
+canvas, #canvas1 {
+    border: 1px solid #000000;
+}
