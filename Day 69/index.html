@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Style Guide and Coding Conventions</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+<header>
+    <h1 class='text-center'>HTML5 Style & Coding Conventions</h1>
+    <hr/>
+</header>
+<section>
+    <h3>Code must be Smart & Future Proof:</h3>
+    <p>Code must have a consistent user of style, this makes code to easier understand written code.</p>
+    <p>In future XML readers or other readers may try to read documents made, meaning </p>
+    <hr/>
+</section>
+<section>
+    <h3>Use of Correct Document Type:</h3>
+    <p>Use !DOCTYPE html.</p>
+    <p>Rather than: !doctype html.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Use Lower Case Element Names:</h3>
+    <p>HTML5 allows the mixing of uppercase and lowercase letters in element names.</p>
+    <p>Lowercase element names are recommended because:</p>
+    <ul>
+        <li>Mixing uppercase and lowercase names is bad.</li>
+        <li>Developers normally use lowercase names (like XHTML).</li>
+        <li>Lowercase looks cleaner.</li>
+        <li>Lowercase are easier to write.</li>
+    </ul>
+    <hr/>
+</section>
+<section>
+    <h3>All Elements must be closed:</h3>
+    <p>In HTML5, not all elements need to be closed, however it's recommented.</p>
+    <p>A paragraph element doesn't need to be closed, but it's highly recommended.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Close empty HTML elements:</h3>
+    <p>Elements such as meta or hr don't require closing, but it's recommended.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Use Lower case Attribute names:</h3>
+    <p>Like elements, HTML5 allows for the mixing of uppercase and lowercase attribute names.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Quote Attribute Values:</h3>
+    <p>HTML5 allows Attribute values without quotes.</p>
+    <p>Quotes are highly recommended because:</p>
+    <ul>
+        <li>Developers normally use quote attribute values (like in HTML).</li>
+        <li>Quoted values are easier to read.</li>
+        <li>Quotes MUST be used if the value contains spaces.</li>
+    </ul>
+    <hr/>
+</section>
+<section>
+    <h3>Image Attributes:</h3>
+    <p>Images must always contain the <i>alt</i> attribute. This attribute is important if the image can't be displayeed.</p>
+    <p>The width and height must also be defined. By doing this it can reduce flickering as the browser can reserve space for the image before loading.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Spaces and Equal Signs:</h3>
+    <p>HTML5 allows spaces around equal signs. Space-less is easier to read and groups entities better together.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Avoid Long Code Lines:</h3>
+    <p>When using a HTML editor, it's inconveinent and more time consuming to scroll left & right to read the HTML code.</p>
+    <p>To avoid this, lines of over 80 characters should be avoided.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Blank Lines & Indentation:</h3>
+    <p>Blank lines shouldn't be added without reason.</p>
+    <p>For readability, blank spaces are good for separating large or logical code blocks.</p>
+    <p>According to W3, rather than tabs, two spaces should be used, however 
+    it's down to the organisation/individuals' discretion. </p>
+    <p>Unnecessary blank lines & indentation shouldn't be used. It's not necessary to indent every element.</p>
+    <ul>
+        <li>List Indentation Example</li>
+    </ul>
+    <hr/>
+</section>
+<section>
+    <h3>Omitting html and body Tags:</h3>
+    <p>Although not recommended, the html and body element tags
+    can be omitted.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Omitting head:</h3>
+    <p>Again, not recommended, the head tag can be omitted to reduce complexity.
+    This shouldn't be done as it's unfamiliar to developers and needs time to be
+    established as a guideline.
+    </p>
+    <hr/>
+</section>
+<section>
+    <h3>Meta Data:</h3>
+    <p>The title element is required in HTML5, so must be meaningful.</p>
+    <p>To ensure proper interpretation and correct search engine indexing,
+    both the language and the character encoding should be defined as early as 
+    possible in a document.
+    </p>
+    <hr/>
+</section>
+<section>
+    <h3>Setting the Viewport:</h3>
+    <p>HTML5 introduced a method to let web designers take control over the
+    viewport, via the meta tag.</p>
+    <p>The viewport is the user's visible area of a web page. It varies with
+    the device, and will be smaller on a mobile than on a computer screen.</p>
+    <p>The meta viewport should be included in every page.</p>
+    <p>A meta viewport element gives the browser instruction on how to control
+    the page's dimensions and scaling.</p>
+    <p>The width=device-width sets the width of the page to follow the screen-width
+    of the device(which will vary).</p>
+    <p>The initial-scale=1.0 part sets the initial zoon level when the page is first
+    loaded by the browser.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Style Sheets:</h3>
+    <p>Simple syntax for linking to style sheets (the type attribute is not necessary).</p>
+    <p>Short rules in CSS can be written compressed {element:value;}</p>
+    <p>Long rules with many element and values should span multiple lines:<br/>
+        {<br/>
+            element: value;<br/>
+            element: value;<br/>
+            element: value;<br/>
+        }</p>
+    <hr/>
+</section>
+<section>
+    <h3>Loading JavaScript in HTML:</h3>
+    <p>script src = "document reference"</p>
+    <hr/>
+</section>
+<section>
+    <h3>Use Lower Case File Names:</h3>
+    <p>File servers such as Apache & Unix are case sensitive, wherease others
+    such as Microsoft & IIS are not case sensitive. Because some servers are
+    and some aren't, naming must be kept very extremely consistent.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Differences Between .html and .html:</h3>
+    <p>There's no difference between .html and .html extensions. Browsers
+    will both be treated as HTML.</p>
+    <p>The differences are cultural, .htm is where early DOS systems were limited
+    to 3 character extensions. .html is from Unit where there isn't that limitation.</p>
+    <hr/>
+</section>
+<section>
+    <h3>Technical Differences</h3>
+    <p>When a URL does not specify a filename (like https://www.w3schools.com/css/), 
+    the server returns a default filename. Common default filenames are index.html, 
+    index.htm, default.html and default.htm.</p>
+    <p>If your server is configured only with "index.html" as default filename, your 
+    file must be named "index.html", not "index.htm."</p>
+    <p>However, servers can be configured with more than one default filename, and 
+    normally you can set up as many default filenames as needed.</p>
+    <p>Anyway, the full extension for HTML files is .html, and there's
+    no reason it should not be used.</p>
+    <hr/>
+</section>
+<footer>
+    <h4>This is the footer.</h4>
+</footer>
+</body>
+</html>
