@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>HTML5 Video</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<section>
+    <h1>HTML5 Video</h1>
+    <hr>
+</section>
+<section>
+    <h3>Playing Videos in HTML:</h3>
+    <p>Prior to HTML5, a video could only be played in a browser with a plug-in
+    such as Flash.</p>
+    <p>The HTML5 video element specifies a standard way to embed a video in a web page.</p>
+    <hr>
+</section>
+<section>
+    <h3>HTML video Element:</h3>
+    <p>Example:</p>
+    <video width='250' height='100' controls>
+        <source src='#' type='video/mp4'>
+        Browser doesn't support video tag.
+    </video>
+    <hr>
+</section>
+<section>
+    <h3>How video works:</h3>
+    <p>The controls attribute adds video controls, like play, pause, and volume.</p>
+    <p>Width and height should always be included. If height and width are not
+    set, the page might flicker while the video loads.</p>
+    <p>The source element allows specification of video files which the browser
+    may choose from. The browser will use the recognised format.</p>
+    <p>Any text between the tags will only be displayed if browser doesn't support video.</p>
+    <hr>
+</section>
+<section>
+    <h3>video Autoplay attribute:</h3>
+    <p>The Autoplay attribute starts playing videos automatically.</p>
+    <hr>
+</section>
+<section>
+    <h3>HTML Video - Media Types:</h3>
+    <table>
+        <tr>
+            <th>File Format</th>
+            <th>Media Type</th>
+        </tr>
+        <tr>
+            <td>MP4</td>
+            <td>video/mp4</td>
+        </tr>
+        <tr>
+            <td>WebM</td>
+            <td>video/webm</td>
+        </tr>
+        <tr>
+            <td>Ogg</td>
+            <td>video/ogg</td>
+        </tr>
+    </table>
+    <hr>
+</section>
+<section>
+    <h3>HTML Video - Methods, Properties and Events:</h3>
+    <p>HTML5 defines DOM methods, properties and events for the video element.</p>
+    <p>This allows for loading, playing, pausing, duration and volume setting.</p>
+    <p>There are also DOM events that can notify you weh na video begins to play
+    gets pause, etc.</p>
+</section>
+</body>
+</html>
