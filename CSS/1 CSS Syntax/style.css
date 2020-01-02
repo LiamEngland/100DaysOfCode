@@ -1,0 +1,43 @@
+body {
+    background-color: #444444;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* This is a test comment */
+
+/* This 
+    is
+    another
+    comment*/
+
+
+/* This is an element selector */
+p {
+    color: #222222;
+    text-align: center;
+}
+
+/* This is an ID selector */
+#testing {
+    color: #000000;
+}
+
+/* This is a Class Selector */
+.testing {
+    color: #000000;
+}
+
+/* This is selecting elements with classes added */
+p .testing {
+    color: #222222;
+}
+
+/* This is the Universal Selector */
+* {
+    display: block;
+}
+
+/* Grouped Selection */
+h1, h2 {
+    color: #222222;
+}
