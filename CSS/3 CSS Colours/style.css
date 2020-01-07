@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #DDDDDD;
+}
+
+hr {
+    border: none;
+    border-top: 1px #222222 solid;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.orange {
+    color: orange;
+}
+
+.dodgerBlue {
+    color: dodgerblue;
+}
+
+.mediumSeaGreen {
+    color: mediumseagreen;
+}
+
+.gray {
+    color: gray;
+}
+
+.slateBlue {
+    color: slateblue;
+}
+
+.violet {
+    color: violet;
+}
+
+.lightGray {
+    color: lightgray;
+}
+
+.bgTomato {
+    background-color: tomato
+}
+
+.bgOrange {
+    background-color: orange;
+}
+
+.borderYellow {
+    border: 1px yellow solid;
+}
+
+.borderCyan {
+    border: 1px cyan solid;
+}
+
+.borderBlue {
+    border: 1px blue solid;
+}
+
+.rgbRed {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.rgbGreen {
+    background-color: rgb(0, 255, 0);
+    padding: 10px;
+}
+
+.rgbBlue {
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.rgbOrange {
+    background-color: rgb(255, 165, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.rgbBlack {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.rgbDarkGray {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.rgbGray {
+    background-color: rgb(120, 120, 120);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.hexRed {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.hexGreen {
+    background-color: #00ff00;
+    color: #000000;
+    padding: 10px;
+}
+
+.hexBlue {
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.hexOrange {
+    background-color: #ffaa00;
+    color: #000000;
+    padding: 10px;
+}
+
+.hexBlack {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.hexGray {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.hslRed {
+    background-color: hsl(360, 100%, 50%);
+    color: hsl(0, 100%, 100%);
+    padding: 10px;
+}
+
+.hslGreen {
+    background-color: hsl(120, 100%, 50%);
+    color: hsl(0, 0, 0);
+    padding: 10px;
+}
+
+.hslBlue {
+    background-color: hsl(240, 100%, 70%);
+    color: hsl(0, 100%, 100%);
+    padding: 10px;
+}
+
+.hslSaturation {
+    background-color: hsl(360, 60%, 50%);
+    color: hsl(0, 100%, 100%);
+    padding: 10px;
+}
+
+.hslSaturation2 {
+    background-color: hsl(360, 20%, 50%);
+    color: hsl(0, 100%, 100%);
+    padding: 10px;
+}
+
+.rgbaFull {
+    background-color: rgba(255, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.rgbaHalf {
+    background-color: rgba(255, 0, 0, .5);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.rgbaNone {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgba(0, 0, 0, 1);
+    padding: 10px;
+}
+
+.hslaFull {
+    background-color: hsla(0, 100%, 50%, 1);
+    color: hsla(0, 100%, 100%, 1);
+    padding: 10px;
+}
+
+.hslaHalf {
+    background-color: hsla(0, 100%, 50%, .5);
+    color: hsla(0, 100%, 100%, 1);
+    padding: 10px;
+}
+
+.hslaNone {
+    background-color: hsla(0, 100%, 50%, 1);
+    color: hsla(0, 0, 0, 1);
+    padding: 10px;
+}
