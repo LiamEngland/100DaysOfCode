@@ -1,6 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url("test.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
 }
+
+/*
+
+body {
+    background: #ffffff url("demo.png) no-repeat right top;
+}
+
+*/
 
 hr {
     border: 0;
@@ -9,4 +21,37 @@ hr {
 
 .textCenter {
     text-align: center;
+}
+
+.bgColor {
+    background-color: #aaaaaa;
+    padding: 15px;
+}
+
+.bgImage {
+    background-image: url("duck.jpg");
+    width: 357px;
+    height: 384px;
+    color: #ffffff;
+}
+
+.bgNoRepeat {
+    background-image: url("duck.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    color: #aaaaaa;
+}
+
+.container {
+    height: 600px;
+    width: 100%;
+}
+
+.bgPosition {
+    background-image: url("duck.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 500px;
+    color: #aaaaaa;
 }
