@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Borders</title>
+</head>
+<body>
+    <h1 class="textCenter">CSS Borders</h1>
+    <hr/>
+    <h3>CSS Border Properties:</h3>
+    <p>The CSS border properties allow a border to have the style, width and colour specified.</p>
+    <hr/>
+    <h3>CSS Border Style:</h3>
+    <p>The border-style property specifies what kind of border to display.</p>
+    <p>Below are the following values allowed:</p>
+    <ul>
+        <li><i>dotted</i> - Defines a dotted border.</li>
+        <li><i>dashed</i> - Defines a dashed border.</li>
+        <li><i>solid</i> - Defines a solid border.</li>
+        <li><i>double</i> - Defines a double border.</li>
+        <li><i>groove</i> - Defines a 3D grooved border. The effect depends on the border-color value.</li>
+        <li><i>ridge</i> - Defines a 3D ridged border. The effect depends on the border-color value.</li>
+        <li><i>inset</i> - Defines a 3D inset border. The effect depends on the border-color value.</li>
+        <li><i>outset</i> - Defines a 3D outset border. The effect depends on the border-color value.</li>
+        <li><i>none</i> - Defines no border.</li>
+        <li><i>hidden</i> - Defines a hidden border.</li>
+    </ul>
+    <p>Below are examples of the different border styles:</p>
+    <p class="dotted">This has an dotted border.</p>
+    <p class="dashed">This has an dashed border.</p>
+    <p class="solid">This has an solid border.</p>
+    <p class="double">This has an double border.</p>
+    <p class="groove">This has an groove border. </p>
+    <p class="ridge">This has an ridge border.</p>
+    <p class="inset">This has an inset border.</p>
+    <p class="outset">This has an outset border.</p>
+    <p class="none">This has no border.</p>
+    <p class="hidden">This has a hidden border.</p>
+    <p class="mix">This has a mixed border.</p>
+    <hr/>
+    <h3>CSS Border Width:</h3>
+    <p>The border-width property specifies the width of the four borders.</p>
+    <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values:</p>
+    <ul>
+        <li>thin</li>
+        <li>medium</li>
+        <li>thick</li>
+    </ul>
+    <p>The border-width property can have one to four values. These are:</p>
+    <ul>
+        <li>top border</li>
+        <li>right border</li>
+        <li>bottom border</li>
+        <li>left border</li>
+    </ul>
+    <p class="specific">Specific Border Width</p>
+    <p class="preset">Preset Border Width</p>
+    <p class="values">Preset Values Width</p>
+    <hr/>
+    <h3>CSS Border Color:</h3>
+    <p>The border-color property is used to set the colour of the four borders.</p>
+    <p>The colour can be set by:</p>
+    <ul>
+        <li>Name - the preset values such as "green".</li>
+        <li>Hex - using a hex values such as "#000000".</li>
+        <li>RGB - using an RGB value such as rgb(0, 255, 0).</li>
+        <li>Transparent</li>
+    </ul>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border and left border).</p>
+    <p>If border-color is not set, it inherits the color of the element.</p>
+    <p class="borderRed">I have a Red border.</p>
+    <p class="borderGreen">I have a Green border.</p>
+    <p class="borderColours">I have a Multi-Colour border.</p>
+    <hr/>
+    <h3>CSS Border - Individual Sides:</h3>
+    <p>In CSS there ae properties for specifying each of the borders (top, right, bottom and left):</p>
+    <p class="borderIndividual">See this has different border styles.</p>
+    <p class="borderShortIndividual">This does the same but using shorthand.</p>
+    <p><b>Border style works as follows:</b></p>
+    <p>Let's say a border-style property has four values: <b>dotted dashed inset outset</b>.</p>
+    <ul>
+        <li><b>Top </b>border is <b>dotted</b>.</li>
+        <li><b>Right </b>border is <b>dashed</b>.</li>
+        <li><b>Bottom </b>border is <b>inset</b>.</li>
+        <li><b>Left </b>border is <b>outset</b>.</li>
+    </ul><br/>
+    <p>If the border-style property has 3 values: <b>dotted solid double</b>.</p>
+    <ul>
+        <li><b>Top</b> border is <b>dotted</b>.</li>
+        <li><b>Right and Left</b> borders are <b>solid</b>.</li>
+        <li><b>Bottom</b> border is <b>double</b>.</li>
+    </ul><br/>
+    <p>If the border style propery has two values: <b>dotted solid</b>.</p>
+    <ul>
+        <li><b>Top and Bottom</b> are <b>dotted</b>.</li>
+        <li><b>Right and Left</b> are <b>solid</b>.</li>
+    </ul><br/>
+    <p>If the border style propery has one value: <b>solid</b>.</p>
+    <ul>
+        <li><b>All Four</b> borders are <b>solid</b>.</li>
+    </ul><br/>
+    <p>The border-style can also work with other properties such as border-width and color.</p>
+    <hr/>
+    <h3>CSS Border - Shorthand Property:</h3>
+    <p>To shorten the amound of code written, it's possible to specify all the individual border properties in one property.</p>
+    <p>The border property is a shorthand property for the following individual border properties:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style (Mandatory)</li>
+        <li>border-color</li>
+    </ul>
+    <p class="shorthand">I'm using shorthand.</p>
+    <p class="shorthandLeft">I've got a left border.</p>
+    <p class="shorthandRight">I've got a right border.</p>
+    <hr/>
+    <h3>CSS Rounded Borders:</h3>
+    <p>The border-radius property is used to add rounded borders to an element:</p>
+    <p class="roundedBorder">This has a rounded border.</p>
+    <hr/>
+</body>
+</html>
