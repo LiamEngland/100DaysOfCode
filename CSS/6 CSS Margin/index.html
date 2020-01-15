@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Margins</title>
+</head>
+<body>
+    <h1>CSS Margins</h1>
+    <hr/>
+    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+    <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom and left).</p>
+    <hr/>
+    <h3>Margin - Individual Sides:</h3>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+    <ul>
+        <li><b>margin-top</b></li>
+        <li><b>margin-right</b></li>
+        <li><b>margin-bottom</b></li>
+        <li><b>margin-left</b></li>
+    </ul>
+    <p>All the margin properties can have the following values:</p>
+    <ul>
+        <li><b>auto</b> - The browser calculates the margin.</li>
+        <li><b>length</b> - Specifiesa margin in px, pt, cm, etc.</li>
+        <li><b>%</b> - Specifies a margin in % of the width of the containing element.</li>
+        <li><b>inherit</b> - Specifies that the margin should be inherited from the parent element.</li>
+    </ul>
+    <p>With these values, negative values are allowed.</p>
+    <p class="borderSides">This has different border values.</p>
+    <hr/>
+    <h3>Margin - Shorthand Property:</h3>
+    <p>Like others, the margin property has a shorthand property for all the margin properties.</p>
+    <p>The margin properties being shorthanded are:</p>
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+    <p>The way the margin property works with four values is like a clock. The values apply clockwise, from top, right, bottom and left.</p>
+    <p>If the margin has only three values: margin: 20px 40px 20px</p>
+    <p>With this, the <b>top</b> margin will be 20px, the <b>right and left</b> will be 40px and the <b>bottom</b> will be 20px.</p>
+    <p>If the margin shorthand has only <b>two</b> values: 20px 30px:</p>
+    <p>The <b>top and bottom</b> margins will be 20px, the <b>right and left</b> will be 30px.</p>
+    <p>If the margin shorthand property only has one value, all margins will have that value.</p>
+    <hr/>
+    <h3>The auto Value:</h3>
+    <p>The auto value can be used to horizontally center an element within its container. 
+    The element will take up the width specified, then the margin will split equally between the left and right margins.</p>
+    <div class="marginAuto">
+        <p>I'm a centered div!</p>
+    </div>
+    <hr/>
+    <h3>The inherit Value:</h3>
+    <p>The inherit value allows an element to inherit the attribute from the parent element.</p>
+    <p>For example, class div has a margin of 10px, class div2 is nested in class div, and has a margin on inherit. Class div2 will have a margin of 10px as it's inherited the margin from the parent element.</p>
+    <hr/>
+    <h3>Margin Collapse:</h3>
+    <p>The top and bottom margins on elements can be collapsed into a single margin that's equal to the largest of the two margins.</p>
+    <p>This can only happen with top and bottom, not right and left:</p>
+    <p>If element 1 has a bottom margin of 20px and element 2 situated below has a top margin of 10px, they will collapse and only the 20px margin will be used. </p>
+    <hr>
+</body>
+</html>
