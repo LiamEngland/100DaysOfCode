@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #aaaaaa;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+.paddingMultiple {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+    border: 1px solid #000000;
+    background-color: #bbbbbb;
+}
+
+.paddingWidth {
+    width: 250px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #bbbbbb;
+}
+
+.paddingBorderBox {
+    width: 250px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #bbbbbb;
+    box-sizing: border-box;
+}

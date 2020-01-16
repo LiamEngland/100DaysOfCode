@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Padding</title>
+</head>
+<body>
+    <h1>CSS Padding</h1>
+    <hr/>
+    <p>The CSS Padding properties are used to generate space around an element's content, inside any defined borders.</p>
+    <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, left).</p>
+    <hr/>
+    <h3>Padding - Individual Sides:</h3>
+    <p>CSS has properties for specifying the padding for each side of an element:</p>
+    <ul>
+        <li><b>padding-top</b></li>
+        <li><b>padding-right</b></li>
+        <li><b>padding-bottom</b></li>
+        <li><b>padding-left</b></li>
+    </ul>
+    <p>All the padding propeties can have the following values:</p>
+    <ul>
+        <li><b>length</b> - specifies a padding in px, pt, cm, etc.</li>
+        <li><b>%</b> - specifies a padding in percentage of the width of the containing element.</li>
+        <li><b>inherit</b> - as covered in the previous entry, padding will be inherited from the parent element.</li>
+    </ul>
+    <p>Unlike margin, negative values are not allowed.</p>
+    <p class="paddingMultiple">I have got different padding values!</p>
+    <hr/>
+    <h3>Padding - Shorthand Property:</h3>
+    <p>Like with Margin, the padding property has a shorthand that can have all 4 properties into one:</p>
+    <ul>
+        <li><b>padding-top</b></li>
+        <li><b>padding-right</b></li>
+        <li><b>padding-bottom</b></li>
+        <li><b>padding-left</b></li>
+    </ul>
+    <p>Below are how the number of parameters in the shorthand padding property work:</p>
+    <ul>
+        <li><b>Four Parameters: </b>With four, each parameter will set the padding relative to the position. <i><b>padding: 10px 20px 30px 10px</b></i> the first will set the <b>top</b> to 10px, second the right to <b>20px</b>, third the bottom to <b>30px</b> and last the left to <b>10px.</b></li>
+        <li><b>Three Parameters: </b>With three, the first parameter will set the top padding, the second parameter will set the right and left padding, and the third will set the bottom padding.</li>
+        <li><b>Two Parameters: </b>With two, the first parameter will set the top and bottom padding, the second parameter will set the right and left padding.</li>
+        <li><b>One Parameter: </b>With one parameter, all padding will be set to that value.</li>
+    </ul>
+    <hr/>
+    <h3>Padding and Element Width:</h3>
+    <p>The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border and margin of the element (the box model).</p>
+    <p>So, if an element has a specified width, the padding added tothat element will be added to the total width of the element. This is often an undesirable result.</p><br/>
+    <p class="paddingWidth">I've a set width and added padding adding to the width</p>
+    <p>The element has a width of 250px and a padding of 50px, so the total width of the element is 350px due to the padding being applied on both sides.</p>
+    <p>As this can sometimes be an issue, the box-sizing property can be used. This will maintain the element's width and use the content space for the padding, reducing how much content can be used.</p>
+    <p class="paddingBorderBox">I'm using box-sizing: border-box; to maintain my width.</p>
+    <hr/>
+</body>
+</html>
