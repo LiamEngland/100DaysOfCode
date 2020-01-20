@@ -1,0 +1,35 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+.heightWidth1 {
+    width: 75%;
+    height: 250px;
+    background-color: rgba(0, 100, 255, 1);
+    border: 1px rgba(0, 50, 255, 1) solid;
+    margin: 7px;
+    box-sizing: border-box;
+}
+
+.heightWidth2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(0, 100, 255, 1);
+    border: 1px rgba(0, 50, 255, 1) solid;
+    margin: 7px;
+    box-sizing: border-box;
+}
+
+.maximumWidth {
+    max-width: 1000px;
+    height: 200px;
+    border: 1px rgba(0, 50, 255, 1) solid;
+    margin: 15px;
+    box-sizing: border-box;
+}

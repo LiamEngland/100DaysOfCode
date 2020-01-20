@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Height & Width</title>
+</head>
+<body>
+    <h1>CSS Height and Width</h1>
+    <hr/>
+    <h3>CSS Setting Height & Width:</h3>
+    <p>The height and width properties are used to set the height and width of an element.</p>
+    <p>The height and width properties do not includng padding, borders or margins. It sets the height/width of the area inside the padding, border and margin of the element.</p>
+    <hr/>
+    <h3>CSS Height/Width Values:</h3>
+    <p>The height and width properties may have the following values:</p>
+    <ul>
+        <li><b>auto</b> - This is default. The browser calculates the height and width.</li>
+        <li><b>length</b> - Defines the height/width in px, cm, etc.</li>
+        <li><b>%</b> - Defines the height/width in percent of the containing block.</li>
+        <li><b>initial</b> - Sets the height/width to its default value.</li>
+        <li><b>inherit</b> - The width/height will be inherited from its parent value.</li>
+    </ul>
+    <div class="heightWidth1">
+        <p>This has a height of 250px and width of 75%.</p>
+    </div>
+    <div class="heightWidth2">
+        <p>This has a height of 150px and width of 300px.</p>
+    </div>
+    <p>The height and width properties do not include padding, borders, or margins. They set the width/height of the area inside the padding, border and margin of the element.</p>
+    <hr/>
+    <h3>CSS Setting max-width:</h3>
+    <p>The max-width property is used to set the maximum width of an element.</p>
+    <p>The max-width property can be specified in <b>length</b> values such as px, cm or in percent of the containing block. By default, the value is set to none, where the where there's no maximum width.</p>
+    <p>The problem occurs when the browser window is smaller than the width of the element. So a screen 800px wide can't contain a full 1000px width container. When something like this occurs, a scrollbar will appear.</p>
+    <p>Using max-width instead of having a high width, can allow for smaller screens to to handle a div.</p>
+    <div class="maximimumWidth">
+        <p>I have got a max-width property set.</p>
+    </div>
+    <hr>
+</body>
+</html>
