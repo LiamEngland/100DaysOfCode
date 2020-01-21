@@ -1,0 +1,17 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+.boxModel {
+    width: 90%;
+    border: 1px solid #bbbbbb;
+    padding: 30px;
+    margin: auto;
+    box-sizing: border-box;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Box Model</title>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    <hr>
+    <p>The CSS Box Model is used when talking about design and layout in HTML and CSS.</p>
+    <p>The Box Model is a box that wraps around every HTML element. It consists of:</p>
+    <ul>
+        <li>margins</li>
+        <li>borders</li>
+        <li>padding</li>
+        <li>content</li>
+    </ul>
+    <p>Below is a visual representation taken from W3.</p>
+    <img src="1.JPG" alt="Box Model">
+    <p>How the box model is made and works is as follows:</p>
+    <ul>
+        <li><b>Content</b> - This is where anything such as text, images and general content will go.</li>
+        <li><b>Padding</b> - This is the area that surrounds the content, within the border, which is transparent.</li>
+        <li><b>Border</b> - This is what surrounds the padding and/or content. It can have many styles as per previous entries.</li>
+        <li><b>Margin</b> - Clears an area outside the border, this too is transparent.</li>
+    </ul>
+    <p>The box model allows many layers of border that can be utilised in many ways and is a good way to remember what does what when working with all the properties within the model.</p>
+    <div class="boxModel">
+        <p>I am an example box model.</p>
+    </div>
+    <hr/>
+    <h3>Width & Height of an Element:</h3>
+    <p>By understanding the box model, it allows for the knowledge of the width and height of an element with the addition of padding, border and margin.</p>
+    <p>The total element width is calculated as: left and right padding, plus left and right border, plus left and right margin.</p>
+    <p>The total element height is calulated as: top and bottom padding, plus top and bottom border and plus top and bottom margin.</p>
+    <hr/>
+</body>
+</html>
