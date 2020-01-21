@@ -1,0 +1,82 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+p.dotted {outline-style: dotted;}
+
+p.dashed {outline-style: dashed;}
+
+p.solid {outline-style: solid;}
+
+p.double {outline-style: double;}
+
+p.groove {outline-style: groove;}
+
+p.ridge {outline-style: ridge;}
+
+p.inset {outline-style: inset;}
+
+p.outset {outline-style: outset;}
+
+p.yellowOutline {
+    border: 1px solid #000000;
+    outline-style: groove;
+    outline-color: #ffff00;
+}
+
+p.blueOutline {
+    border: 1px solid #000000;
+    outline-style: inset;
+    outline-color: #0000ff;
+}
+
+p.invertedOutline {
+    border: 1px solid #ffffff;
+    outline-style: solid;
+    outline-color: invert;
+}
+
+p.outlineThin {
+    border: 1px solid #000000;
+    outline-style: solid;
+    outline-color: #0000ff;
+    outline-width: thin;
+}
+
+p.outlineMedium {
+    border: 1px solid #000000;
+    outline-style: solid;
+    outline-color: #0000ff;
+    outline-width: medium;
+}
+
+p.outlineThick {
+    border: 1px solid #000000;
+    outline-style: solid;
+    outline-color: #0000ff;
+    outline-width: thick;
+}
+
+p.outlineSpecific {
+    border: 1px solid #000000;
+    outline-style: solid;
+    outline-color: #0000ff;
+    outline-width: 6px;
+}
+
+.outlineShorthand {outline: 5px solid #00ff00;}
+
+.outlineOffset {
+    margin: 10px;
+    border: 1px solid #000000;
+    outline: 1px solid #ff0000;
+    background-color: #00ff00;
+    padding: 10px;
+    outline-offset: 10px;
+}

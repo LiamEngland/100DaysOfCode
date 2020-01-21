@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Outline</title>
+</head>
+<body>
+    <h1>CSS Outline</h1>
+    <hr/>
+    <p>The CSS Outlineis a line that is drawn around elements outside the borders, this allows them to stand out.</p>
+    <p>Below is a visual representation from W3:</p>
+    <img src="1.JPG" alt="CSS Outline">
+    <p>CSS Outline has the following properties:</p>
+    <ul>
+        <li>outline-style</li>
+        <li>outline-color</li>
+        <li>outline-width</li>
+        <li>outline-offset</li>
+        <li>outline</li>
+    </ul>
+    <p>One note, the outline is not like the border as it's drawn outside the border, and may overlap other content. Also the outline is not part of the element's dimensions. The element's total width and height is not affected by the width of the outline.</p>
+    <hr/>
+    <h3>CSS Outline Style:</h3>
+    <p>The outline-style property specifies the style of the outline, and can have one of the following values:</p>
+    <ul>
+        <li><b>dotted</b> - Defines a dotted outline.</li>
+        <li><b>dashed</b> - Defines a dashed outline.</li>
+        <li><b>solid</b> - Defines a solid outline.</li>
+        <li><b>double</b> - Defines a double outline.</li>
+        <li><b>groove</b> - Defines a grooved outline.</li>
+        <li><b>ridge</b> - Defines a ridged outline.</li>
+        <li><b>inset</b> - Defines an inset outline.</li>
+        <li><b>outset</b> - Defines an outset outline.</li>
+        <li><b>none</b> - Defines no outline.</li>
+        <li><b>hidden</b> - Defines a hidden outline.</li>
+    </ul>
+    <p>Below are examples of the above listed styles</p>
+    <p class="dotted">I have a dotted outline.</p>
+    <p class="dashed">I have a dashed outline.</p>
+    <p class="solid">I have a solid outline.</p>
+    <p class="double">I have a double outline.</p>
+    <p class="groove">I have a grooved outline.</p>
+    <p class="ridge">I have a ridged outline.</p>
+    <p class="inset">I have an inset outline.</p>
+    <p class="outset">I have an outset outline.</p>
+    <p>The properties <b>none</b> and <b>hidden</b> will have no effects, unless the outline-style property is set.</p>
+    <hr/>
+    <h3>CSS Outline Colour:</h3>
+    <p>The outline-color property is used to set the color of the outline.</p>
+    <p>The colour can be set by the following as were covered in the previous colour entries:</p>
+    <ul>
+        <li><b>name</b></li>
+        <li><b>RGB</b></li>
+        <li><b>Hex</b></li>
+        <li><b>invert</b> - performs a colour inversion that ensures the outline is visible, regardless of the background colour.</li>
+    </ul>
+    <p class="yellowOutline">I have a yellow grooved outline.</p>
+    <p class="blueOutline">I have a blue inset outline.</p>
+    <p class="invertedOutline">I have an inverted outline.</p>
+    <hr/>
+    <h3>CSS Outline Width:</h3>
+    <p>The outline-width property specifies the width ofthe outline, and can have one of the following values:</p>
+    <ul>
+        <li><b>thin</b> - usually 1px.</li>
+        <li><b>medium</b> - usually 3px.</li>
+        <li><b>thick</b> - usually 5px.</li>
+        <li><b>Specific</b> - A specified size in px, em, etc.</li>
+    </ul>
+    <p class="outlineThin">I have a thin outline.</p>
+    <p class="outlineMedium">I have a medium outline.</p>
+    <p class="outlineThick">I have a thick outline.</p>
+    <p class="outlineSpecific">I have a specific sized outline.</p>
+    <hr>
+    <h3>CSS Outline - Shorthand:</h3>
+    <p>The outline property is a shorthand property for setting for setting the individual outline properties:</p>
+    <ul>
+        <li>outline-width</li>
+        <li>outline-style - required</li>
+        <li>outline-color</li>
+    </ul>
+    <p>The outline property is specified as one, two or three values from the list above. The order of the values doesn't matter.</p>
+    <p>The following example shows outlines specified with the shorthand outline property:</p>
+    <p class="outlineShorthand">I am using the outline property.</p>
+    <hr/>
+    <h3>CSS Outline Offset:</h3>
+    <p>The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
+    <p class="outlineOffset">I have a 10px outline-offset.</p>
+    <hr>
+</body>
+</html>
