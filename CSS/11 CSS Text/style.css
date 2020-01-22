@@ -1,0 +1,64 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+p.colourYellow {color: #ffff00;}
+
+p.alignLeft {text-align: left;}
+
+p.alignCenter {text-align: center;}
+
+p.alignRight {text-align: right;}
+
+p.alignJustify {text-align: justify;}
+
+a.decorationNone {text-decoration: none;}
+
+p.decorationOverline {text-decoration: overline;}
+
+p.decorationLineThrough {text-decoration: line-through;}
+
+p.decorationUnderline {text-decoration: underline;}
+
+p.transformUpper {text-transform: uppercase;}
+
+p.transformLower {text-transform: lowercase;}
+
+p.transformCapitalise {text-transform: capitalize}
+
+.smallContainer {
+    width: 250px;
+    border: 1px solid #000000;
+}
+
+p.textIndentation {text-indent: 50px;}
+
+p.spacingWide {letter-spacing: 3px;}
+
+p.spacingNarrow {letter-spacing: -1px;}
+
+p.heightTall {line-height: 1.5;}
+
+p.heightShort {line-height: 0.2;}
+
+p.directionRtl {direction: rtl;}
+
+p.wordSpacingWide {word-spacing: 10px;}
+
+p.wordSpacingThin {word-spacing: -3px;}
+
+p.textShadow1 {
+    color: #000000;
+    text-shadow: 0 0 2px #0000ff;
+}
+
+p.textShadow2 {text-shadow: 0 0 5px #ffff00;}
+
+p.textShadow3 {text-shadow: 4px 5px #00ffff;}
