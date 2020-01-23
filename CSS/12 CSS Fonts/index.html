@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Fonts</title>
+</head>
+<body>
+    <h1>CSS Font</h1>
+    <p>The CSS font properties define the font family, boldness, size and style of a text.</p>
+    <hr/>
+    <h3>Difference between Serif and Sans-Serif Fonts:</h3>
+    <img src="1.JPG" alt="Serif & Sans Serif Diagram">
+    <p><sub>Image from W3Schools.</sub></p>
+    <hr/>
+    <h3>CSS Font Families:</h3>
+    <p>In CSS there's two types of font family names:</p>
+    <ul>
+        <li><b>generic family</b> - a group of font families wih a similar look, e.g. Serif or Monospace</li>
+        <li><b>font family</b> - a specific font family, e.g. Lemon Milk or Montserrat.</li>
+    </ul>
+    <p>Serif fonts have small lines at the ends on some characters.</p>
+    <p>Sans-serif fonts don't have the small lines at the end of characters.</p>
+    <p>Monospace fonts have characters that all have the same width.</p>
+    <hr/>
+    <h3>Font Family:</h3>
+    <p>The font-family property sets the font family of text.</p>
+    <p>The font-family property should hold serveral font names as a fallback, in case the browser doesn't support the first, or a CDN goes down.</p>
+    <p>When settings these additional fonts, it should start with the desired and get more generic over time if no others are available.</p>
+    <p>If a font family has multiple words, they must be declared in quotations marks. When specifying the font family, each font much be separated with commas.</p>
+    <p class="setFont">I have a different font family.  </p>
+    <hr/>
+    <h3>Font Style:</h3>
+    <p>The font-style property is mostly used to specify italic text.</p>
+    <p>The font-style property has three values:</p>
+    <ul>
+        <li><b>normal</b> - The text is shown normally.</li>
+        <li><b>italic</b> - The text is shown in italics.</li>
+        <li><b>oblique</b> - The text is leaning in a similar way to italic, however has less browser support.</li>
+    </ul>
+    <p class="styleNormal">I have normal font styling.</p>
+    <p class="styleItalic">I have italic font styling.</p>
+    <p class="styleOblique">I have oblique font styling.</p>
+    <hr/>
+    <h3>Font Size:</h3>
+    <p>The font-size property sets the size of the text.</p>
+    <p>Adjusting font styles is an essential construct of web design, however should be used correctly. This such as paragraphs should not have styling to make them look like headings, and vice versa.</p>
+    <p>Propery HTML tags like h1 - h6 should always be used for headings and p for paragraphs.</p>
+    <p>The font-size value can be absolute or relative.</p>
+    <p>Absolutely sized text:</p>
+    <ul>
+        <li>Sets the text to the specified size.</li>
+        <li>Doesn't allow a user to change the text size in all browsers which can be problematic for accessiblity.</li>
+        <li>Absolute size is useful when the physical size of the output is known.</li>
+    </ul>
+    <p>Relatively sized text:</p>
+    <ul>
+        <li>Sets the size relatively to the surrounding elements.</li>
+        <li>Allows a user to change the text size in browsers.</li>
+    </ul>
+    <hr/>
+    <h3>Setting Font Size /w Pixels:</h3>
+    <p>Setting the text size with pixels allows for full control over text size.</p>
+    <p class="pixelSize">I've got my text set to 20 pixels.</p>
+    <hr/>
+    <h3>Setting Font Size /w Em:</h3>
+    <p>To allow users to resize the text, em is more commonly used rather than pixels. The em size unit is recommended in the W3 standard.</p>
+    <p>1em is equal to the current font size. The default font size in browsers is 16 pixel, so 1em will equal 16px.</p>
+    <p>The size can calculated from pixels to em by taking the amount of pixels and dividing that by 16.</p>
+    <p class="emSize">My font-size is set in em.</p>
+    <h1 class="emSize">My font is also set in em!</h1>
+    <p>The sizes can of font can be set to their intended or similar sizes, however by setting them in em, it allows for the text to be resized in all browsers.</p>
+    <p>Thankfully older versions of IE are being phased out, as when resizing, text resizes at an incorrect scale.</p>
+    <hr/>
+    <h3>Using a Combination of Percent & Em:</h3>
+    <p>By setting the default text size in the body to 100% sets all the text to 100% and can be resized in all browsers.</p>
+    <hr/>
+    <h3>Font-Weight:</h3>
+    <p>The font-weight property is used to specify the weight of a font. This can be done with preset values or numbers. Examples of preset at 'normal', 'lighter' and for specific a numerical value from 100 - 900 which allows for a lot of control with font weight.</p>
+    <p class="weightLighter">I am using the preset font-weight value of 'lighter.</p>
+    <p class="weightSpecific">I am using a specific font-weight value of '900'.</p>
+    <hr/>
+    <h3>Responsive Font Size:</h3>
+    <p>The text-size can be set with a vw unit, which means "viewport width". By setting text size with this value it'll alter when the viewport size changes.</p>
+    <p>Viewport is the browser window size, meaning 1vw equals 1% of the viewport width. So each character will take up 1% of the browser window.</p>
+    <h1 class="sizeResponsive">I AM RESIZEABLE</h1>
+    <hr>
+    <h3>Font Variant:</h3>
+    <p>The font-variant property specifies whether or not a text shold be displayed in a small-caps font.</p>
+    <p>In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appear in a smaller font than the original uppercase letters.</p>
+    <p class="variantNormal">I Have Normal Text.</p>
+    <p class="variantSmall">I Have Small Text.</p>
+    <hr/>
+    <h3>Font Property:</h3>
+    <p>The font property is a shorthand property for the following:</p>
+    <ul>
+        <li>font-style</li>
+        <li>font-variant</li>
+        <li>font-weight</li>
+        <li>font-size/line-height</li>
+        <li>font-family</li>
+    </ul>
+    <p>The font-size and font-family values are required. If one of the other values are missing their default values are used.</p>
+    <p>The syntax is as follows: <i>font: font-style, font-variant, font-weight, font-size/font-height font-family</i>.</p>
+    <hr>
+</body>
+</html>
