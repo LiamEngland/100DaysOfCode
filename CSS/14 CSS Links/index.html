@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Links</title>
+</head>
+<body>
+    <h1>CSS Links</h1>
+    <p>With the addition of CSS, links can be styled a number of different ways.</p>
+    <hr/>
+    <h3>Styling Links:</h3>
+    <p>Links can be styled with any CSS property.</p>
+    <a class="anchorRed" href="#">I am a Red styled hyperlink.</a>
+    <p>Links can be styled differently depending on what state they're in.</p>
+    <p>The four link states are:</p>
+    <ul>
+        <li><b>a:link</b> - a normal, unvisted link.</li>
+        <li><b>a:visited</b> - a link the user has visited.</li>
+        <li><b>a:hover</b> - a link when the user's mouse hovers over it.</li>
+        <li><b>a:active</b> - a link the moment it's clicked.</li>
+    </ul>
+    <p>When setting the styling for several link states, there are some order rules:</p>
+    <ul>
+        <li><b>a:hover</b> - Must come after a:link and a:visited.</li>
+        <li><b>a:active</b> - Must come after a:hover.</li>
+    </ul>
+    <hr/>
+    <h3>Text Decordation:</h3>
+    <p>The text-decoration propertyis mostly used to remove underlines from links.</p>
+    <a class="decoration" href="#">Altered Text Decoration.</a>
+    <hr/>
+    <h3>Background Colour:</h3>
+    <p>The background-color property can be used to specify a background colour for links.</p>
+    <hr/>
+    <h3>Link Buttons:</h3>
+    <p>By combining the correct CSS properties, a link can be displayed as a box/button.</p>
+    <a class="testButton" href="#">TEST</a>
+    <p>By using the 'cursor' attribute, the cursor can be altered to prompt the user so they know they can interact with what they're hovering over.</p>
+    <hr/>
+</body>
+</html>

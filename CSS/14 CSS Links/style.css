@@ -1,0 +1,71 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+a.anchorRed {
+    color: #ff0000;
+    background-color: #eeeeee;
+}
+
+a:link {
+    color: #ffff00;
+}
+
+a:visited {
+    color: #00ff00;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+a:active {
+    color: #0000ff;
+}
+
+a:link.decoration {
+    text-decoration: none;
+    color: #1111ff;
+    background-color: #eeee00;
+}
+
+a:visited.decoration {
+    text-decoration: none;
+    color: #1111ff;
+    background-color: #eeee00;
+}
+
+a:hover.decoration {
+    text-decoration: underline;
+    color: #0000bb;
+    background-color: #ffff11
+}
+
+a:active.decoration {
+    text-decoration: underline;
+    color: #0000bb;
+    background-color: #ffff11
+}
+
+a:link.testButton, a:visited.testButton {
+    background-color: #55ff55;
+    color: #002200;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover.testButton, a:active.testButton {
+    background-color: #55bb55;
+    color: #001100;
+    cursor: pointer;
+}
