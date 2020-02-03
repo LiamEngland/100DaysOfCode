@@ -1,0 +1,46 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+ul.style1 {list-style-type: circle;}
+
+ul.style2 {list-style-type: square;}
+
+ul.style3 {list-style-type: upper-roman;}
+
+ul.style4 {list-style-type: lower-alpha;}
+
+ul.style5 {list-style-type: lower-greek;}
+
+ul.listImageStyle {list-style-image: url("1.png")}
+
+ul.listPosition1 {list-style-position: inside;}
+
+ul.listPosition2 {list-style-position: outside;}
+
+ul.noSettings {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.listShorthand {
+    list-style: square inside;
+}
+
+ul.backgroundColour {
+    background-color: #0000ff;
+    padding: 10px;
+}
+
+ul li.backgroundColourLight {
+    background-color: #8888ff;
+}

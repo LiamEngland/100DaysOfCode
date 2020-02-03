@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Lists</title>
+</head>
+<body>
+    <h1>CSS Lists</h1>
+    <p>HTML provides two types of lists, ordered and unordered lists. CSS allows the styling of these lists.</p>
+    <hr/>
+    <h3>HTML Lists & CSS List Properties:</h3>
+    <p>In HTML, there are two main types of lists:</p>
+    <ul>
+        <li>unordered lists are lists marked with bullets.</li>
+        <li>ordered lists are liststhat are marked with numbers or letters.</li>
+    </ul>
+    <p>The CSS list properties allow:</p>
+    <ul>
+        <li>Setting different list item markers for ordered lists.</li>
+        <li>Setting different list item markers for unordered lists.</li>
+        <li>Setting an image as the list item marker.</li>
+        <li>Adding background colours to lists and list items.</li>
+    </ul>
+    <hr/>
+    <h3>Different List Item Markers:</h3>
+    <p>The list-style-type property specifies the type of list item marker. Below are some different styled markers.</p>
+    <ul class='style1'>
+        <li>Style Circle</li>
+    </ul>
+    <ul  class='style2'>
+        <li>Style Square</li>
+    </ul>
+    <ul class='style3'>
+        <li>Style Upper Roman</li>
+    </ul>
+    <ul class='style4'>
+        <li>Style Lower Alpha</li>
+    </ul>
+    <ul class='style5'>
+        <li>Style Lower Greek</li>
+    </ul>
+    <hr>
+    <h3>An Image as the List Item Marker:</h3>
+    <p>The list-style-image property specifies an image as the list item marker.</p>
+    <ul class="listImageStyle">
+        <li>I have an image for styling.</li>
+    </ul>
+    <hr/>
+    <h3>Position the List Item Markers:</h3>
+    <p>The list-style-position property specifies the position of the list-item markers (bulet-points).</p>
+    <p>Setting the value to outside sets the bullet points to be outside the list item, whereas inside sets then to be inside the list item.</p>
+    <ul class="listPosition1">
+        <li>This is inside.</li>
+    </ul>
+    <ul class="listPosition2">
+        <li>This is outside.</li>
+    </ul>
+    <hr/>
+    <h3>Remove Default Settings:</h3>
+    <p>The list-style-type: none property can be used to remove the markers/bullets. This list also has a default margin and padding set, so can also be removed.</p>
+    <ul class="noSettings">
+        <li>It's all gone.</li>
+    </ul>
+    <hr/>
+    <h3>List - Shorthand Property:</h3>
+    <p>The list-style property is a shorthand property to set all list styling properties is one declaration.</p>
+    <p>When using the property, the order of the values are: <b>list-style-type</b> to specify the shape to be set, or as a fallback if the image doesn't load, <b>list-style-position</b> which is to select if the markers appear inside or outside the content and finally <b>list-style-image</b> to set the image that'll be used for the list item marker.</p>
+    <p>If any of the property values are missing, the defailt value for the missing property will be inserted.</p>
+    <ul class="listShorthand">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+    </ul>
+    <hr/>
+    <h3>Styling List with Colours:</h3>
+    <p>As well as styling previously mentioned, lists can be styled with colours if needed. Anything added to the <b>ol</b> or <b>ul</b> tag will affect the whole list, whilst <b>li</b> tags will affect the individual list items.</p>
+    <ul class="backgroundColour">
+        <li class="backgroundColourLight">I am styled with colour.</li>
+    </ul>
+    <hr>
+</body>
+</html>
