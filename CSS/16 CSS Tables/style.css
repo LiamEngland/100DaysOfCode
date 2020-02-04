@@ -1,0 +1,125 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+.tableBorderCollapse {
+    border-collapse: collapse;
+}
+
+.tableHeightWidth{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableHeightWidth th {
+    height: 40px;
+}
+
+.tableAlignment {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableAlignment th {
+    text-align: right;
+}
+
+.tableAlignment td {
+    text-align: center;
+}
+
+.tableVertical {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableVertical td {
+    height: 30px;
+    vertical-align: bottom;
+}
+
+.tablePadding {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablePadding td, .tablePadding th {
+    padding: 15px;
+}
+
+table.tableHorizontalDivider {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+table.tableHorizontalDivider td, table.tableHorizontalDivider th {
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-bottom: #666666 solid 1px;
+}
+
+.tableHover {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHover tr:hover {
+    background-color: #999999;
+    transition-duration: 0.2s;
+}
+
+.tableHover tr {
+    background-color: transparent;
+    transition-duration: 0.2s;
+}
+
+.tableHover th, .tableHover td {
+    padding: 15px;
+}
+
+.tableStriped {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableStriped th, .tableStriped td {
+    padding: 15px;
+}
+
+.tableStriped tr:nth-child(odd) {
+    background-color: #999999;
+}
+
+.tableColour {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableColour th {
+    background-color: #112233;
+    color: #ccccff;
+    padding: 15px;
+}
+
+.tableColour td {
+    padding: 15px;
+}
+
+.responsive {
+    overflow-x: auto;
+}

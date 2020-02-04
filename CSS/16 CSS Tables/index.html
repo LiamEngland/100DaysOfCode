@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Tables</title>
+</head>
+<body>
+    <h1>CSS Tables</h1>
+    <p>HTML provides two types of lists, ordered and unordered lists. CSS allows the styling of these lists.</p>
+    <hr/>
+    <h3>Table Borders:</h3>
+    <p>To specify the table borders, the <b>border</b> property can be used.</p>
+    <table>
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <p>Because both the table and the th/td elements both have borders, the borders have doubled up.</p>
+    <hr/>
+    <h3>Collapse Table Borders:</h3>
+    <p>As shown in the previous example, double borders don't look the best. By using the property <b>border-collapse: collapse</b> allows table borders to be collapsed into a single border. Example below.</p>
+    <table class="tableBorderCollapse">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Table Width & Height:</h3>
+    <p>The width and height properties of a table can be set by using the <b>width</b> and <b>height</b> properties. Below is an example of a full width table with expanded headers.</p>
+    <table class="tableHeightWidth">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Horizontal Alignment:</h3>
+    <p>The <b>text-align</b> property sets the horizontal alignment of the content within the th/td. By default, th elements are center aligned and td elements are left aligned. Below is is example of these values altered.</p>
+    <table class="tableAlignment">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Vertical Alignment:</h3>
+    <p>The vertical alignment property sets the vertical alignement, like top, middle or bottom, of the content in the th/td.</p>
+    <p>By default, the vertical alignment of the content in a table is in the middle for both th and td elements. Below is an example of cells aligned to the bottom.</p>
+    <table class="tableVertical">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Table Padding:</h3>
+    <p>To control the space between the border and the content in a table, padding can be used on td and th elements.</p>
+    <table class="tablePadding">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Horizontal Dividers:</h3>
+    <p>Horizontal dividers can be added by adding the border-bottom property to the th and td for horizontal dividers.</p>
+    <table class="tableHorizontalDivider">
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Hoverable Table:</h3>
+    <p>By using the <b>:hover</b> selector on a <b>tr</b>, that will allow styling for when the row is hovered over.</p>
+    <table class="tableHover">
+        <tr>
+            <th>Hover Over</th>
+            <th>These Cells</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Striped Tables:</h3>
+    <p>To get this to apply, the nth-child() selector can be used and a background-color selected for all the odd or even table rows.</p>
+    <table class="tableStriped">
+        <tr>
+            <th>Striped</th>
+            <th>Cells</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Table Colour:</h3>
+    <p>Table colour can be specify with all the methods previously shown. For example the background-color can be set on a th to make it stand out from the rest of the rows.</p>
+    <table class="tableColour">
+        <tr>
+            <th>Colourful</th>
+            <th>Cells</th>
+        </tr>
+        <tr>
+            <td>Value 1</td>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <td>Value 3</td>
+            <td>Value 4</td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Responsive Table:</h3>
+    <p>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content.</p>
+    <p>To achieve this, a table can be nested in a div with overflow-x: auto set to it. To test, reduce the browser's width to see.</p>
+    <div class="responsive">
+        <table class="tableColour">
+            <tr>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+                <th>Test Cell</th>
+            </tr>
+            <tr>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+            </tr>
+            <tr>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 1</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
