@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout</title>
+</head>
+<body>
+    <h1>CSS Layout</h1>
+    <p>The display property is the most important CSS property for controlling layout.</p>
+    <hr/>
+    <h3>The display Property:</h3>
+    <p>The <b>display</b> property specifies if/how an element is displayed.</p>
+    <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is <b>block</b> or <b>inline</b>.</p>
+    <hr/>
+    <h3>Block-level Elements:</h3>
+    <p>A block-level element always starts on a new line and takes up the full width available. An example of a block-level element is a div.</p>
+    <div class='outlineBlue'>I am a block-level element.</div>
+    <p>Examples of block-level elements are:</p>
+    <ul>
+        <li>div</li>
+        <li>h1 - h6</li>
+        <li>p</li>
+        <li>form</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>section</li>
+    </ul>
+    <hr/>
+    <h3>Inline Elements:</h3>
+    <p>An inline element doesn't start on a new line as it only takes up as much width as necessary.</p>
+    <ul>
+        <li>span</li>
+        <li>a</li>
+        <li>img</li>    
+    </ul>
+    <hr/>
+    <h3>Display: none:</h3>
+    <p><b>display: none;</b> is often used with javascript to hide and show elements withour needing to delete or recreate them.</p>
+    <hr/>
+    <h3>Override The Default Display Value:</h3>
+    <p>Every element has a default display value. These values can be overidden.</p>
+    <p>Changing an inline element to a block element, or vice versa, this can be useful for making pages and elements look a specific way whilst following web standards.</p>
+    <p>A common example of this usage is the list item element being used for horizontal menus.</p>
+    <ul class='inline'>
+        <li>these</li>
+        <li>are</li>
+        <li>inline</li>
+        <li>list items</li>
+    </ul>
+    <p>Setting a property of an element only changes how the element is displayed, not what kind of element it is. An inline element with display: block cannot have block level elements nested within it.</p>
+    <span class="displayBlock">I am a span element with display set to block.</span>
+    <hr/>
+    <h3>Hide an Element - display:none or visibility:hidden:</h3>
+    <p>The below element has visibility set to hidden.</p>
+    <h5 class="visibilityHidden">Hidden</h5>
+    <hr/>
+</body>
+</html>

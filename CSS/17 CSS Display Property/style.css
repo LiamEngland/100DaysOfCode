@@ -1,0 +1,29 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.outlineBlue {
+    border: 2px solid #5555ff
+}
+
+.inline li {
+    display: inline;
+}
+
+.displayBlock {
+    display: block;
+    border: 1px #5555ff solid;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
