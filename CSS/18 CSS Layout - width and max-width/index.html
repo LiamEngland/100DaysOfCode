@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - width and max-width</title>
+</head>
+<body>
+    <h1>CSS Layout - width & max-width</h1>
+    <hr/>
+    <p>As mentioned in the previous entry; a block-level element always takes up full width available to it.</p>
+    <p>Setting the <b>width</b> of a block level element will prevent it from stretching the full width of its container.</p>
+    <p>With this and setting the margins to auto, the element can be centered while taking up the specified width, and remaining space can split between the two margins.</p>
+    <div class="centeredDiv">
+        <p>This div element has a width of 550, with a margin set to auto.</p>
+    </div>    
+    <p>By using <b>max-width</b>, it will improve the browser's handling of small windows. This is imported to make a site more usable on smaller devices. See example below on browser resize.</p>
+    <div class="centeredMaxDiv">
+        <p>This div element has a width of 550, with a margin set to auto.</p>
+    </div>  
+    <hr/>
+</body>
+</html>

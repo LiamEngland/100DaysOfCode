@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - The position Property</title>
+</head>
+<body>
+    <h1>CSS Layout - The position Property</h1>
+    <hr/>
+    <p>The <b>position</b> property specifies the type of positioning method used for an element (static, relative, absolute or sticky).</p>
+    <hr/>
+    <h3>The position Property:</h3>
+    <p>The <b>position</b> property specifies the type of positioning method used for an element.</p>
+    <p>There are five different position values:</p>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
+    <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the 
+    position property is set first. They also work differently depending on the position value.</p>
+    <hr/>
+    <h3>position: static:</h3>
+    <p>By default, HTML elements are positioned with static.</p>
+    <p>Static positioned elements are not affected by the top, bottom, left or right properties.</p>
+    <p>An element with <b>position: static</b> is not positioned in any special way; it's alwats positioned according to the normal flow of the page.</p>
+    <div class="divStatic">
+        <p>This is a static div.</p>
+    </div>
+    <hr/>
+    <h3>position: relative:</h3>
+    <p>An element with <b>position: relative;</b> is positioned relative to its normal position.</p>
+    <p>Setting the top, right, bottom and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+    Other content will not be adjusted to fit into any gap left by the element.</p>
+    <p>Below, the div is relatively positioned, with the left property set to 40px.</p>
+    <div class="divRelative">
+        <p>This is a relatively positioned div.</p>
+    </div>
+    <hr/>
+    <h3>position: fixed:</h3>
+    <p>An element with <b>position: fixed;</b> is positioned relative to the viewport, which means it always stays in the same place regardless if the page is scrolled or not.
+    The top, bottom, right and left position are used to position the element.</p>
+    <p>Fixed positioned elements do not leave a gap in the page where it would normally have been located. The example is in the top right.</p>
+    <div class="divFixed">
+        <p>This div is fixed to the top right.</p>
+    </div>
+    <hr/>
+    <h3>position: absolute:</h3>
+    <p>An element with <b>position: absolute;</b> is positioned relatively to the nearest positioned ancestor (instead of positioned
+    relative to the viewport, like fixed).</p>
+    <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+    <p>A thing to note is a positioned element is one where the position is anything except <b>static</b>.</p>
+    <div class="divRelative2">
+        <p>This is a relative div.</p>
+        <div class="divAbsolute">
+            <p>This is an absolutely positioned div in a relatively positioned div.</p>
+        </div>
+    </div>
+    <hr/>
+    <h3>position: sticky:</h3>
+    <p>An element with <b>position: sticky;</b> is positioned based on the user's scroll position.</p>
+    <p>A sticky element toggles between <b>relative</b> and <b>fixed</b>, depending on the scroll position. It's positioned relative until a given
+     offset position is met in the viewport, then it sticks in place like <b>position: fixed</b>.</p>
+    <p>One thing to note is this is a new property, so IE/Edge 15 and earlier versions don't support it. If a site needs to support older browsers this may not be suitable.</p>
+    <div class="divSticky">
+        <p>This is a sticky positioned element.</p>
+    </div>
+    <hr/>
+    <h3>Overlapping Elements:</h3>
+    <p>When elements are positioned, they can overlap other elements.</p>
+    <p>The <b>z-index</b> property specifies the stack order of an element (which element should be placed in front of, or behind, the others.</p>
+    <p>An element can have a positive or negative stack order.</p>
+    <div class="divRelative2">
+        <h2>Testing</h2>
+        <img class="overlap" src="1.gif" width="100" height="140">
+        <p>This is a paragraph which is above the image.</p>
+    </div>
+    <hr/>
+    <h3>Positioning Text in an Image:</h3>
+    <div class="divRelative3">
+        <h4 class="centered">Centered</h4>
+        <h4 class="topLeft">Top Left</h4>
+        <h4 class="bottomRight">Bottom Right</h4>
+        <img class="textPosition" src="2.jpg" alt="Italy">
+    </div>
+    <hr/>
+</body>
+</html>

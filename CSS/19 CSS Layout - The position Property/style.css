@@ -1,0 +1,110 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.divStatic {
+    border: 2px #3333ff solid;
+}
+
+
+/* Added inline as div and p were taking 100% width, being pushed 40px off the page adding a scrollbar. */
+.divRelative {
+    display: inline;
+    position: relative;
+    left: 40px;
+    border: 2px #3333ff solid;
+}
+
+.divRelative p {
+    display: inherit;
+}
+
+.divRelative2 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px #3333ff solid;
+}
+
+.divFixed {
+    position: fixed;
+    border: 2px #3333ff solid;
+    top: 5px;
+    right: 5px;
+    width: 250px;
+}
+
+.divAbsolute {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 200px;
+    height: 150px;
+    border: 2px #ff3333 solid;
+}
+
+.divSticky {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 5px;
+    padding: 0 15px;
+    background-color: #333;
+    border: 2px #000 solid;
+    color: #fff;
+}
+
+img.overlap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.divRelative3 {
+    position: relative;
+}
+
+.topLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    margin: 8px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.centered {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+img.textPosition {
+    width: 100%;
+}
+
+.bottomRight {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    margin: 8px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}

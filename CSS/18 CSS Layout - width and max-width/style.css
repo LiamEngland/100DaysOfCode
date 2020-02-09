@@ -1,0 +1,26 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.centeredDiv {
+    width: 550px;
+    margin: auto;
+    padding: 5px;
+    border: 2px #3333ff solid;
+}
+
+.centeredMaxDiv {
+    max-width: 550px;
+    margin: auto;
+    padding: 5px;
+    border: 2px #3333ff solid;
+}
