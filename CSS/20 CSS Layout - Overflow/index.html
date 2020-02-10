@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - Overflow</title>
+</head>
+<body>
+    <h1>CSS Layout - Overflow</h1>
+    <p>The CSS <b>overflow</b> property controls what happens to content that's too big to fit into the area.</p>
+    <hr/>
+    <h3>CSS Overflow:</h3>
+    <p>The <b>overflow</b> property has the following values:</p>
+    <ul>
+        <li><b>visible</b> - Default value. The overflow isn't clipped. The content renders outside the element's box.</li>
+        <li><b>hidden</b> - The overflow is clipped, and the rest of the content will be invisible.</li>
+        <li><b>scroll</b> - The overflow is clipped, and a scrollbar is added to see the rest of the content.</li>
+        <li><b>auto</b> - Similar to <b>scroll</b>, but it adds scrollbars only when necessary.</li>
+    </ul>
+    <p>The overflow property only works for block level elements with a specified height.</p>
+    <hr/>
+    <h3>overflow: visible:</h3>
+    <p>By default, the overflow is <b>visible</b>, meaning that it is not clipped and it renders outside the element's box:</p>
+    <div class="overflowVisible">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <hr/>
+    <h3>overflow: hidden:</h3>
+    <p>With the <b>hidden</b> value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <div class="overflowHidden">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <hr/>
+    <h3>overflow: scroll:</h3>
+    <p>Setting the value to <b>scroll</b>, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that
+    this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+    <div class="overflowScroll">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <hr/>
+    <h3>overflow: auto:</h3>
+    <p>The <b>auto</b> value is similar to <b>scroll</b>, but it adds scrollbars only when necessary:</p>
+    <div class="overflowAuto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <hr/>
+    <h3>overflow-x and overflow-y:</h3>
+    <p>The <b>overflow-x</b> and <b>overflow-y</b> properties specify whether to change the overflow of content just horizontally, vertically or both:</p>
+    <p><b>overflow-x</b> specifies what to do with the left and right edges of content.</p>
+    <div class="overflowX">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <p><b>overflow-y</b> specifies what to do with the top and bottom edges of content.</p>
+    <div class="overflowY">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus quam augue, a 
+        iaculis massa faucibus eu.</p>
+    </div>
+    <hr/>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.overflowVisible {
+    width: 250px;
+    height: 50px;
+    background-color: #888;
+    overflow: visible;
+}
+
+.overflowHidden {
+    width: 250px;
+    height: 70px;
+    background-color: #888;
+    overflow: hidden;
+}
+
+.overflowScroll {
+    width: 250px;
+    height: 70px;
+    background-color: #888;
+    overflow: scroll;
+}
+
+.overflowAuto {
+    width: 250px;
+    height: 70px;
+    background-color: #888;
+    overflow: auto;
+}
+
+.overflowX {
+    width: 250px;
+    height: 70px;
+    background-color: #888;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.overflowY {
+    width: 250px;
+    height: 70px;
+    background-color: #888;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
