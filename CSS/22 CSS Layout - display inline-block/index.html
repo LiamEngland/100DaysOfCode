@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - display: inline-block</title>
+</head>
+<body>
+    <h1>CSS Layout - display: inline-block</h1>
+    <hr/>
+    <h3>The display: inline-block Value:</h3>
+    <p>Compared to <b>display: inline</b>, the major difference is that <b>display: inline-block</b> allows to set a width and height on the element.</p>
+    <p>Also, with <b>display: inline-block</b>, the top and bottom margins/paddings are respected, but with <b>display: inline</b> they're not.</p>
+    <p>Compared to <b>display: block</b>, the major difference is that <b>display: inline-block</b> doesn't add a line break after the element. so the element can sit next to other elements.</p>
+    <p>Below shows different behaviour of <b>display: inline</b>, <b>display: inline-block</b> and <b>display: block</b>.</p>
+    <h4>Display: inline</h4>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet <span class="inline">consequat</span>. Aliquam erat volutpat. <span class="inline">gravida</span> nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <h4>Display: inline-block</h4>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet <span class="inlineBlock">consequat</span>. Aliquam erat volutpat. <span class="inlineBlock">gravida</span> nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <h4>Display: block</h4>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet <span class="block">consequat</span>. Aliquam erat volutpat. <span class="block">gravida</span> nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <hr/>
+    <h3>Using inline-block to Create Navigation Links:</h3>
+    <p>A common use for <b>display: inline-block</b> is to display list items horizontally instead of vertically. Below shows horizontal navigation links:</p>
+    <ul class="navigation">
+        <li><a href="#" >Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p>By default, list items are displayed vertically. Here using inline-block, it displays them horizontally. On resizing the browser the list items will break when content becomes too crowded.</p>
+    <hr/>
+</body>
+</html>
