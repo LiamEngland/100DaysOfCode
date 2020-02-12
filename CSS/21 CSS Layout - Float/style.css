@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.imageFloatRight {
+    float: right;
+    width: 130px;
+    height: 130px;
+}
+
+.imageFloatLeft {
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.imageFloatNone {
+    float: none;
+    width: 130px;
+    height: 130px;
+}
+
+.div1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #0000ff;
+}
+
+.div2 {
+    border: 1px solid #00ff00;
+    width: 50%;
+}
+
+.div3 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #0000ff;
+}
+
+.div4 {
+    border: 1px solid #00ff00;
+    width: 50%;
+    clear: left;
+}
+
+.container {
+    border: 3px solid #0000ff;
+    padding: 3px;
+    margin: 5px 0;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.image {
+    float: right;
+}
+
+.equalWidth1 { /* 3 boxes on a row */
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+    background-color: #666666;
+    text-align: center;
+    color: #fff;
+}
+
+.imageContainer {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.imageWidth {
+    width: 100%;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #444444;
+}
+
+.flexContainer .container2 {
+    background-color: #222222;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+li.navigation {
+    float: left;
+}
+
+li.navigation a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+li.navigation a:hover {
+    background-color: #3333dd;
+    color: #eeeeee;
+}
+
+.active {
+    background-color: #4444ff;
+
+}
+
+.header, .footer {
+    background-color: #cccccc;
+    color: #222222;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.menu {
+    width: 30%;
+}
+
+.content {
+    width: 70%;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 1px;
+    margin-bottom: 8px;
+    background-color: #999999;
+    color: #222222;
+}
+
+.menu li:hover {
+    background-color: #888888;
+}

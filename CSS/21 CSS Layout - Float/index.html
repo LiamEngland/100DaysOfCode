@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - Float</title>
+</head>
+<body>
+    <h1>CSS Layout - Float</h1>
+    <p>The CSS <b>float</b> property specifies how an element should float.</p>
+    <p>The CSS <b>clear</b> property specifies what elements can floar beside the cleared element and on which side.</p>
+    <hr/>
+    <h3>The float Property:</h3>
+    <p>The <b>float</b> property can have one of the following values:</p>
+    <ul>
+        <li>left - The element floats to the left of its container.</li>
+        <li>right - The element floats to the right of its container.</li>
+        <li>none - The element does not float (will be displayed just where it occurs in the text). The is the default.</li>
+        <li>inherit - The element inherits the float value of its parent.</li>
+    </ul>
+    <p>In its simplest use, the <b>float</b> property can be used to wrap text around images.</p>
+    <hr/>
+    <h3>float: right;</h3>
+    <p>The below shows that an image should float right in a text:</p>
+    <p><img class="imageFloatRight" src="banana.jpg" alt="banana">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+     odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce 
+     luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a 
+     lacus interdum ut hendrerit risus congue.</p>
+    <hr/>
+    <h3>float: left;</h3>
+    <p>The below shows that an image should float left in a text:</p>
+    <p><img class="imageFloatLeft" src="banana.jpg" alt="banana">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+        odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce 
+        luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a 
+        lacus interdum ut hendrerit risus congue.</p>
+    <hr/>
+    <h3>No float:</h3>
+    <p>The below shows the images with float none:</p>
+    <p><img class="imageFloatNone" src="banana.jpg" alt="banana">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+        odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce 
+        luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a 
+        lacus interdum ut hendrerit risus congue.</p>
+    <hr/>
+    <h3>The clear Property:</h3>
+    <p>The <b>clear</b> property specifies what elements can float beside the cleated element and on which side.</p>
+    <p>The <b>clear</b> property can have one of the following values:</p>
+    <ul>
+        <li>none - Allows floating elements on both sides. This is default.</li>
+        <li>left - No floating elements allowed on the left side.</li>
+        <li>right - No floating elements allowed on the right side.</li>
+        <li>both - No floating elements allowed on either the left or right side.</li>
+        <li>inherit - The element inherits the clear value of its parent.</li>
+    </ul>
+    <p>The most common way to use the clear property is after you have used a <b>float</b> property on an element.</p>
+    <p>When clearing floats, you should match the clear to float: If an element is floated to the left, then you should clear to the left. The floated element will continue to float, but the cleared element will appear below it on the web page.</p>
+    <p>Below is an example clears the float to the left. Meaning no floating elements are allowed on the left side of the div.</p>
+    <h4>Without Clear:</h4>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2 - Div 2 is after Div 1 in the HTML code, however since Div 1 floats to the left, the text flows around Div 1.</div>
+    <div class="div3">Div 3</div>
+    <div class="div4">Div 4 - Div 4 Has been moved down as the left clear value has cleared elelment floated to the left. This can also be set to right or both.</div>
+    <hr/>
+    <h3>The clearfix Hack:</h3>
+    <p>If an element's taller than the element containing it, and it's floated, it will overflow outside the container. By adding <b>overflow: auto</b> to the containing element to fix this problem.</p>
+    <div class="container">
+        <img class="image" src="banana.jpg" alt="Banana" width="170px" height="170px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum</p>
+    </div>
+    <div class="container clearfix">
+        <img class="image" src="banana.jpg" alt="Banana" width="170px" height="170px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum</p>
+    </div>
+    <p>The clearfix works well as long as the margins and padding can be controlled, otherwise scrollbars may be shown. The newer hack in the CSS file is safer to use for most webpages.</p>
+    <hr/>
+    <h3>Grid of Boxes / Equal Width Boxes:</h3>
+    <p>With the <b>float</b> property, it's easier to float boxes of content side by side.</p>
+    <div class="clearfix">
+        <div class="equalWidth1">
+            <p>Box 1</p>
+        </div>
+        <div class="equalWidth1">
+            <p>Box 2</p>
+        </div>
+        <div class="equalWidth1">
+            <p>Box 3</p>
+        </div>
+    </div>
+    <p>The box-sizing property allows to include padding and border in the box's total width (and height), which ensures padding stays within the box so it doesn't break the flow of the page.</p>
+    <hr/>
+    <h3>Images Side By Side:</h3>
+    <p>A grid of boxes can also be used to display images side by side shown below:</p>
+    <div class="clearfix">
+        <div class="imageContainer">
+            <img src="demo.png" alt="demo image" class="imageWidth">
+        </div>
+        <div class="imageContainer">
+            <img src="demo.png" alt="demo image" class="imageWidth">
+        </div>
+        <div class="imageContainer">
+            <img src="demo.png" alt="demo image" class="imageWidth">
+        </div>
+    </div>
+    <hr/>
+    <h3>Equal Height Boxes:</h3>
+    <p>As well as equal widths, containers can also be equal heights. Heights can be set to a set height, but isn't very flexible.</p>
+    <p>A workaround for this is to use CSS3 flexbox, which can automatically stretch containers to be as long as the longest container.</p>
+    <div class="flexContainer">
+        <div class="container2">
+            <p>This is the first box.</p>
+        </div>
+        <div class="container2">
+            <p>This is the second box. The first box will follow the height of this box as the content is pushing this one down.</p>
+        </div>
+    </div>
+    <p>Flexbox isn't supported in IE10, so let's hope anyone viewing this isn't still using that.</p>
+    <hr/>
+    <h3>Navigation Menu:</h3>
+    <p>Use <b>float</b> with a list of hyperlinks to create a horizontal menu:</p>
+    <ul class="navigation">
+        <li class="navigation">
+            <a href="#" class="active">Home</a>
+        </li>
+        <li class="navigation">
+            <a href="#">About</a>
+        </li>
+        <li class="navigation">
+            <a href="#">News</a>
+        </li>
+        <li class="navigation">
+            <a href="#">Contact</a>
+        </li>
+        <li class="navigation">
+            <a href="#">Legal</a>
+        </li>
+    </ul>
+    <hr/>
+    <h3>Web Layout Example:</h3>
+    <p>It's also possible to create a web layout using the <b>float</b> property:</p>
+    <div class="header">
+        <h2>Test Layout</h2>
+    </div>
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>Test Item 1</li>
+                <li>Test Item 2</li>
+                <li>Test Item 3</li>
+                <li>Test Item 4</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h3>Test Title</h3>
+            <hr/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Phasellus imperdiet, nulla et dictum interdum</p>
+        </div>
+    </div>
+    <hr/>
+</body>
+</html>
