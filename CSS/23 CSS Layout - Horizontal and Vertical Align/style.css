@@ -1,0 +1,92 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.marginTop {
+    margin-top: 100px;
+}
+
+.centerElement {
+    margin: auto;
+    width: 50%;
+    border: 2px solid #4444ff;
+    padding: 10px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.imgCenter {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.absoluteRight {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    border: 2px #4444ff solid;
+    padding: 10px;
+}
+
+.floatRight {
+    float: right;
+    width: 250px;
+    border: 2px #4444ff solid;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.verticalCenterPadding {
+    padding: 30px 0;
+    border: 2px #4444ff solid;
+}
+
+.centerPadding {
+    padding: 30px 0;
+    border: 2px #4444ff solid;
+    text-align: center;
+}
+
+.centerLineHeight {
+    line-height: 150px;
+    height: 150px;
+    border: 2px #4444ff solid;
+    text-align: center;
+}
+
+.centerLineHeight p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.centerPositionTransform {
+    height: 150px;
+    position: relative;
+    border: 2px #4444ff solid;
+}
+
+.centerPositionTransform p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

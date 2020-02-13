@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Layout - Horizontal and Vertical Align</title>
+</head>
+<body>
+    <h1>CSS Layout - Horizontal and Vertical Align</h1>
+    <hr/>
+    <h3>Center Align Elements:</h3>
+    <p>To horizontally center a block element (such as <b>div</b>), <b>margin: auto</b> can be used.</p>
+    <p>Setting the width of the element will prevent it from stretching out to the edges of its container.</p>
+    <p>The element will then take up the specified width, and the remaining space will be split equally between the two margins, see below.</p>
+    <div class="centerElement">
+        <p>This element is horizontally centered.</p>
+    </div>
+    <hr/>
+    <h3>Center Align Text:</h3>
+    <p>Text can also be centrally aligned inside an element, using <b>text-align: center;</b>.</p>
+    <div class="centerElement">
+        <p class="textCenter">This text is horizontally centered.</p>
+    </div>
+    <hr/>
+    <h3>Center an Image:</h3>
+    <p>To center an image, the left and right margins can be set to <b>auto</b> and made into a <b>block</b> element, as shown below:</p>
+    <img class="imgCenter" src="banana.jpg" alt="Banana">
+    <hr/>
+    <h3>Left and Right Align - Using position:</h3>
+    <p>One method to align elements is to use <b>position: absolute;</b> as shown below:</p>
+    <div class="absoluteRight">
+        <p class="textCenter">Absolutely positioned, right: 0</p>
+    </div>
+    <hr class="marginTop"/>
+    <h3>Left and Right Align - Using float:</h3>
+    <div class="floatRight">
+        <p class="textCenter">Float: right element</p>
+    </div>
+    <hr/>
+    <h3>The clearfix Hack:</h3>
+    <p>As you can see, the content of the element has overflowed into this section, so by using the clearfix hack that was mentioned on a previous entry can provide a solution for this:</p>
+    <div class="clearfix">
+        <div class="floatRight">
+            <p class="textCenter">Float: right element</p>
+        </div>
+    </div>
+    <hr/>
+    <h3>Center Vertically - Using padding:</h3>
+    <p>One of the many ways to vertically center an element in CSS is by using padding on the top and bottom:</p>
+    <div class="verticalCenterPadding">
+        <p>This is vertically centered.</p>
+    </div>
+    <p>To center both horizontally and vertically, <b>padding</b> and <b>text-align: center</b> can be used if the content is text.</p>
+    <div class="centerPadding">
+        <p>Horizontally and Vertically centered.</p>
+    </div>
+    <hr/>
+    <h3>Center Vertically - Using line-height:</h3>
+    <p>Another trick is to use the <b>line-height</b> property with a value that is equal to the <b>height</b> property.</p>
+    <div class="centerLineHeight">
+        <p>Horizontally and Vertically centered.</p>
+    </div>
+    <hr/>
+    <h3>Center Vertically - Using position and transform:</h3>
+    <p>If <b>padding</b>and <b>line-height</b> are not options, a third solution is to use positioning and the <b>transform</b> property:</p>
+    <div class="centerPositionTransform">
+        <p>Horizontally and Vertically centered.</p>
+    </div>
+    <hr/>
+</body>
+</html>
