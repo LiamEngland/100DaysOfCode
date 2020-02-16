@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Combinators</title>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <hr/>
+    <h3>CSS Combinators:</h3>
+    <p>In CSS, a combinator is something that explains the relationship between selectors.</p>
+    <p>A CSS selector can contain more than one simple selector. Between the simple selectors, a combinator canbe included.</p>
+    <p>There are four different combinators in CSS:</p>
+    <ul>
+        <li>descendant selector (Space).</li>
+        <li>child selector (>)</li>
+        <li>adjacent selector (+)</li>
+        <li>general sibling selector (~)</li>
+    </ul>
+    <h3>Descendant Selector:</h3>
+    <p>The descendant selector matches all elements that are descenants of a specified element.</p>
+    <p> div.testClass p - This would select all paragraph elements within div elements that have the .testClass class applied to them.</p>
+    <hr/>
+    <h3>Child Selector:</h3>
+    <p>The child selector selects all elements that are the children of a specified element.</p>
+    <p>div > p - This would select all p elements that are children of a div element.</p>
+    <hr/>
+    <h3>Adjacent Sibling Selector:</h3>
+    <p>The adjacent sibling selector selects all elements that are adjacent siblings of a specified element.</p>
+    <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+    <p>div + p - Thisselects all p elements that are places immediately after div elements.</p>
+    <hr/>
+    <h3>General Sibling Selector:</h3>
+    <p>The general sibling selector selects all elements that are siblings of a specified element.</p>
+    <p>div ~ p - This example selects all p elements that are siblines of div elements.</p>
+    <hr/>
+</body>
+</html>
