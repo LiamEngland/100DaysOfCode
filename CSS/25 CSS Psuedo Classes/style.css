@@ -1,0 +1,65 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+a:link {
+    color: #ffff44;
+}
+
+a:visited {
+    color: #999944;
+}
+
+a:hover {
+    color: #4444ff
+}
+
+a:active {
+    color: #7777ff;
+}
+
+.divHover {
+    background-color: #999999;
+    color: #222222;
+    padding: 10px 20px;
+}
+
+.divHover:hover {
+    background-color: #bbbbbb;
+    color: #222222;
+}
+
+.pTooltip {
+    display: none;
+    background-color: #ffff00;
+    padding: 10px 20px;
+}
+
+div.divTooltip:hover p.pTooltip {
+    display: block;
+}
+
+div.firstChildDiv p:first-child {
+    color: #0000ff;
+}
+
+p.iSelector i:first-child {
+    color: #ffff00;
+}
+
+q:lang(no) {
+    quotes: "~" "~";
+}
+
+p.firstChild:first-child i {
+    color: #0000ff;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Psuedo Classes</title>
+</head>
+<body>
+    <h1>CSS Psuedo Classes</h1>
+    <hr/>
+    <h3>CSS Psuedo Classes</h3>
+    <p>A psuedo-class is used to define a specil state of an element.</p>
+    <p>It can be used to:</p>
+    <ul>
+        <li>Style an element when a user hovers over it.</li>
+        <li>Style visited and unvisited links differently.</li>
+        <li>Style a element when it gets focus.</li>
+    </ul>
+    <h3>Psuedo-Class Syntax:</h3>
+    <p>The syntax of a psuedo class is often:</p>
+    <p><i><b>selector:psuedo-class {<br/>
+        &nbsp; property:value;<br/>
+    }
+    </b></i></p>
+    <hr/>
+    <h3>Anchor Psuedo-Class:</h3>
+    <p>Links can be displayed in multiple ways - try hovering and clicking the link:</p>
+    <a href='#' rel='noopener'>This has different psuedo classes applied.</a>
+    <p>One thing to note is hover must come after link and visited in the CSS definition to be effective. active must come after hover too.</p>
+    <hr/>
+    <h3>Psuedo-Classes and CSS Classes:</h3>
+    <p>Psuedo-classes can be combined with CSS classes, such as hovering over a div with an applied class it can change colour:</p>
+    <div class="divHover">
+        <p>This div changes colour!</p>
+    </div>
+    <hr/>
+    <h3>Simple Tooltip Hover:</h3>
+    <p>Hovering over a div element can show a p element (like a tooltip):</p>
+    <div class="divTooltip">
+        <p>Hover over to show the other p element.</p>
+        <p class="pTooltip">This is a tooltip!</p>
+    </div>
+    <hr/>
+    <h3>CSS - The :first-child Pseudo-Class:</h3>
+    <p>The <b>:first-child</b> psuedo-class matches a specified element that is the first child of another element.</p>
+    <hr/>
+    <h4>Match the first p element:</h4>
+    <p>Below,the selector matches anyp element that is the first child of any element.</p>
+    <hr/>
+    <h4>Match the first i element in all p elements:</h4>
+    <p><i><b>p:first-child {<br/>
+        &nbsp; color:blue;<br/>
+    }
+    </b></i></p>
+    <div class="firstChildDiv">
+        <p>This first child is blue.</p>
+        <p>This second child is not blue.</p>
+    </div>
+    <hr/>
+    <h4>Match the first i element in all first child p elements:</h4>
+    <p>Below, the selector matches the first i element in all p element:</p>
+    <p class="iSelector"><i>This </i> element is yellow but <i>this </i> one isn't.</p>
+    <hr/>
+    <h4>Match all i elements in all first p elements:</h4>
+    <p>Below shows all i elements in the first p elements that are the first child of another element.</p>
+    <div>
+        <p class="firstChild"><i>This i element</i> is <i>blue.</i></p>
+        <p class="firstChild"><i>This i element</i> is not <i>blue.</i></p>
+    </div>
+    <hr>
+    <h4>CSS - The :lang Psuedo-Class:</h4>
+    <p>The <b>:lang</b> psuedo-class allows you to define special rules for different languages.</p>
+    <p>As shown below, <b>:lang</b> defines the quotation marks for <b>q</b> elements with lang="no".</p>
+    <p>Here's some text: <q lang="no">Here's a quote in a paragraph.</q> Here's some text</p>
+    <hr/>
+</body>
+</html>
