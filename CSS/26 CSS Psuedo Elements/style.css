@@ -1,0 +1,46 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.firstLine::first-line {
+    font-style: oblique;
+    color: #ff2222;
+    font-family: cursive;
+}
+
+.firstLetter::first-letter {
+    color: #2222ff;
+    font-size: 2em;
+}
+
+.multiplePsuedo::first-letter {
+    color: #ffff00;
+    font-size: 2em;
+}
+
+.multiplePsuedo::first-line {
+    font-variant: small-caps;
+    color: #0000ff;
+}
+
+.psuedoBefore::before {
+    content: url(1.jpg);
+}
+
+.psuedoAfter::after {
+    content: url(1.jpg);
+}
+
+::selection {
+    color: #000000;
+    background: #ffff00;
+}
