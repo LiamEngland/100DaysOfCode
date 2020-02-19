@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Opacity</title>
+</head>
+<body>
+    <h1>CSS Opacity / Transparency</h1>
+    <p>The <b>opacity</b> property specifies the opacity/transparency of an element.</p>
+    <hr/>
+    <h3>Transparent Image:</h3>
+    <p>The <b>opacity</b> property can take a value from 0.0 to 1.0. The lower the value, the more transparent.</p>
+    <p>The below examples have different opacity levels set, 0.2, 0.5 and 1.0.</p>
+    <img class="imageOpacity02" src="1.png" alt="Opacity set to 0.2.">
+    <img class="imageOpacity05" src="1.png" alt="Opacity set to 0.5.">
+    <img src="1.png" alt="Opacity is default at 1.0.">
+    <hr/>
+    <h3>Transparent Hover Effect:</h3>
+    <p>The <b>opacity</b> property is often used together with the <b>:hover</b> selector to change the opacity on mouse-over.</p>
+    <img class="opacityHover" src="1.png" alt="Opacity change on hover.">
+    <hr/>
+    <h3>Transparent Box:</h3>
+    <p>When using the <b>opacity</b> property to add transparency. This can make the text inside a fully transparent element hard to read.</p>
+    <div class="opacity01">
+        <p>Opacity set to 0.1.</p>
+    </div>
+    <div class="opacity03">
+        <p>Opacity set to 0.3.</p>
+    </div>
+    <div class="opacity06">
+        <p>Opacity set to 0.6.</p>
+    </div>
+    <div>
+        <p>Opacity set to 1.0 (default).</p>
+    </div>
+    <hr/>
+    <h3>Transparency using RGBA:</h3>
+    <p>If you do not want to apply opacity to child elements, RGBA colour values can be used. Below is an example that sets opacity to the background colour and noth the text.</p>
+    <div class="rgba1">
+        <p>100% opacity.</p>
+    </div>
+    <div class="rgba06">
+        <p>60% opacity.</p>
+    </div>
+    <div class="rgba03">
+        <p>30% opacity.</p>
+    </div>
+    <div class="rgba01">
+        <p>10% opacity.</p>
+    </div>
+    <hr/>
+    <h3>Text an a Transparent Box:</h3>
+    <div class="background">
+        <div class="transparentBox">
+            <p>Here's some text within a transparent box.</p>
+        </div>
+    </div>
+    <hr/>
+</body>
+</html>

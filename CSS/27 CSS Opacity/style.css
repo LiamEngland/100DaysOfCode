@@ -1,0 +1,85 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.imageOpacity02 {
+    opacity: 0.2; 
+}
+
+.imageOpacity05 {
+    opacity: 0.5;
+}
+
+img.opacityHover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+img.opacityHover:hover {
+    opacity: 1;
+    transition-duration: 0.2s;
+}
+
+div {
+    background-color: #44ff44;
+    color: #111111;
+}
+
+div.opacity01 {
+    opacity: 0.1;
+}
+
+div.opacity03 {
+    opacity: 0.3;
+}
+
+div.opacity05 {
+    opacity: 0.5;
+}
+
+div.rgba1 {
+    background-color: rgba(255, 255, 0, 1.0);
+}
+
+div.rgba06 {
+    background-color: rgba(255, 255, 0, 0.6);
+}
+
+div.rgba03 {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+div.rgba01 {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+div.background {
+    background: url(1.png) repeat;
+    border: 1px solid #000000;
+}
+
+div.transparentBox {
+    margin: 25px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    opacity: 0.6;
+}
+
+div.transparentBox p {
+    margin: 5%;
+    color: #000000;
+}
