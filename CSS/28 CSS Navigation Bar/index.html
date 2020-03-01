@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Navigation Bar</title>
+</head>
+<body>
+    <ul class="horizontalSticky">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <h1>CSS Navigation Bar</h1>
+    <hr/>
+    <h3>Navigation Bar - List of Links:</h3>
+    <p>A navigation bar needs standard HTML elements for its base.</p>
+    <p>A navigation bar is just a styled list of links, which is just using <b>ul</b> and <b>li</b> elements.</p>
+    <p>Below is an unstyled list.</p>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>Below is a styled list.</p>
+    <ul class="styleNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>To achieve the above result, the <b>list-style-type</b> is set to none which removes the bullets.</p>
+    <p>The <b>margin</b> and <b>padding</b> are set to 0 to remove any default browser settings. This is standard for both vertical and horizontal navigation bars.</p>
+    <hr/>
+    <h3>Vertical Navigation Bar:</h3>
+    <p>To build a vertical naviation bar, <b>a</b> elements can be styled inside of a list.</p>
+    <ul class="verticalStyled">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <p>Another approach to this is to set the width of the <b>ul</b> and leave the <b>li a</b> width unset and it'll have the same effect.</p>
+    <hr/>
+    <h3>Vertical Navigation Bar Examples:</h3>
+    <h4>Active/Current Navigation Link:</h4>
+    <ul class="verticalNavigation">
+        <li><a class="active">Home</a></li>
+        <li><a>Shop</a></li>
+        <li><a>Contact</a></li>
+        <li><a>About</a></li>
+    </ul>
+    <h4>Center Links & Add Borders:</h4>
+    <p>Adding <b>text-align: center</b> to <b>li</b> or <b>a</b> to center the links.</p>
+    <p>Adding the <b>border</b> property to <b>ul</b> elements adds a border around the navbar. If you also want borders inside the navbar, adding <b>border-bottom</b> to all <b>li</b> elements, except the last one.</p>
+    <ul class="verticalNavigationCenter">
+        <li><a class="active">Home</a></li>
+        <li><a>Shop</a></li>
+        <li><a>Contact</a></li>
+        <li><a>About</a></li>
+    </ul>
+    <hr/>
+    <h3>Horizontal Navigation Bar:</h3>
+    <p>A horizontal navigation bar can be made two ways. Using <b>inline</b> or <b>floating</b> list items.</p>
+    <h4>Using Inline List Items:</h4>
+    <p>One way to build a horizontal navigation bar is to specify the <b>li</b> elements as inline.</p>
+    <ul class="horizontalNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <h4>Using Floating List Items:</h4>
+    <ul class="navigationFloating">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <hr/>
+    <h3>Horizontal Navigation Bar Examples:</h3>
+    <h4>Active/Current Navigation Link:</h4>
+    <ul class="horizontalNavStyle">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <h4>Right-Align Links:</h4>
+    <ul class="horizontalRight">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+        <li style="float:right"><a href="#">About</a></li>
+    </ul>
+    <h4>Border Dividers:</h4>
+    <ul class="horizontalBorder">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <h4>Sticky Navbar:</h4>
+    <p>The sticky navbar example is the one you can see sticking to the top of this page as you scroll down.</p>
+    <hr/>
+</body>
+</html>

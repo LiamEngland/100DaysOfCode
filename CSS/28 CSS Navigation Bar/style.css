@@ -1,0 +1,246 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+ul.styleNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.verticalStyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.verticalStyled li a {
+    display: block;
+    width: 75px;
+    background-color: #444444;
+}
+
+ul.verticalNavigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    background-color: #8f8f8f;
+}
+
+ul.verticalNavigation li a {
+    display: block;
+    color: #000000;
+    padding: 7px 17px;
+    text-decoration: none;
+}
+
+ul.verticalNavigation li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
+
+ul.verticalNavigation li a:hover:not(.active) {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+ul.verticalNavigationCenter {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    background-color: #8f8f8f;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+ul.verticalNavigationCenter li {
+    border-bottom: 1px solid #555555;
+}
+
+ul.verticalNavigationCenter li:last-child {
+    border-bottom: none;
+}
+
+ul.verticalNavigationCenter li a {
+    display: block;
+    color: #000000;
+    padding: 7px 17px;
+    text-decoration: none;
+}
+
+ul.verticalNavigationCenter li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
+
+ul.verticalNavigationCenter li a:hover:not(.active) {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+ul.horizontalNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.horizontalNav li {
+    display: inline;
+}
+
+ul.navigationFloating {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+}
+
+ul.navigationFloating li {
+    float: left;
+}
+
+ul.navigationFloating li a {
+    display: block;
+    padding: 8px;
+    color: #ffffff;
+}
+
+ul.horizontalNavStyle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+ul.horizontalNavStyle li {
+    float: left;
+}
+  
+ul.horizontalNavStyle li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.horizontalNavStyle li a:hover:not(.active) {
+    background-color: #555555;
+    color: #ffffff;
+}
+  
+ul.horizontalNavStyle li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
+
+ul.horizontalRight {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontalRight li {
+    float: left;
+}
+
+ul.horizontalRight li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.horizontalRight li a:hover:not(.active) {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+ul.horizontalRight li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
+
+ul.horizontalBorder {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+ul.horizontalBorder li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+  
+ul.horizontalBorder li:last-child {
+    border-right: none;
+}
+  
+ul.horizontalBorder li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.horizontalBorderli a:hover:not(.active) {
+    background-color: #555555;
+    color: #ffffff;
+}
+  
+ul.horizontalBorder li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
+
+ul.horizontalSticky {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+  
+ul.horizontalSticky li {
+    float: left;
+}
+  
+ul.horizontalSticky li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.horizontalStick li a:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+  
+ul.horizontalSticky li a.active {
+    background-color: #4444ff;
+    color: #ffffff;
+}
